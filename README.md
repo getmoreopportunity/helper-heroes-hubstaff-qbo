@@ -1,7 +1,7 @@
 # Helper Heroes — Hubstaff → QBO hours
 
 Custom API/MCP workflow. **Not** the native Hubstaff→QBO integration (payroll-only).
-We do **not** create new QBO invoices. Matt's process updates the **hours field** on existing QBO **recurring sales receipts** before ACH runs.
+We do **not** create new QBO invoices. Matt updates existing QBO **recurring sales receipts**; he confirms Monday and ACH auto-sends Tuesday. Exact hours-field name in QBO is still TBD with Matt.
 
 No live keys. No live billing. Phantom QBO client first, then Gracious Living / Peter Sotos.
 

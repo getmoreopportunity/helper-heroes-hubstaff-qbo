@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Hubstaff to QBO mapping row",
+  "type": "object",
+  "required": ["status", "hubstaff_project_id", "hubstaff_user_id", "qbo_customer_id", "qbo_recurring_sales_receipt_id", "qbo_hours_field"],
+  "properties": {
+    "status": { "enum": ["draft", "confirmed", "blocked"] },
+    "hubstaff_org_id": { "type": ["string", "null"] },
+    "hubstaff_client_id": { "type": ["string", "null"] },
+    "hubstaff_client_name": { "type": ["string", "null"] },
+    "hubstaff_project_id": { "type": "string" },
+    "hubstaff_project_name": { "type": ["string", "null"] },
+    "hubstaff_user_id": { "type": "string" },
+    "hubstaff_user_name": { "type": ["string", "null"] },
+    "hubstaff_bill_rate": { "type": ["number", "null"], "description": "Never send pay_rate to QBO" },
+    "qbo_customer_id": { "type": "string" },
+    "qbo_customer_legal_name": { "type": ["string", "null"] },
+    "qbo_customer_dba": { "type": ["string", "null"] },
+    "qbo_recurring_sales_receipt_id": { "type": "string" },
+    "qbo_line_id": { "type": ["string", "null"] },
+    "qbo_hours_field": { "type": "string" },
+    "qbo_va_number": { "type": ["string", "null"] },
+    "notes": { "type": ["string", "null"] }
+  },
+  "additionalProperties": false
+}

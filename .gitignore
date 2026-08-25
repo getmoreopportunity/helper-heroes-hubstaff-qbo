@@ -1,0 +1,4 @@
+.env
+*.pem
+client_secret*
+.DS_Store

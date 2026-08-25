@@ -1,0 +1,3 @@
+status,hubstaff_org_id,hubstaff_client_id,hubstaff_client_name,hubstaff_project_id,hubstaff_project_name,hubstaff_user_id,hubstaff_user_name,hubstaff_bill_rate,qbo_customer_id,qbo_customer_legal_name,qbo_customer_dba,qbo_recurring_sales_receipt_id,qbo_line_id,qbo_hours_field,qbo_va_number,notes
+draft,,,,,,,,,,,,,,,,Matt fills from Excel. Phantom client first.
+draft,,,,,,,,,,,,,,,,Gracious Living / Peter Sotos — leave blank until phantom works.

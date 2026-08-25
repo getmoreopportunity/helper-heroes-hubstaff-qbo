@@ -1,0 +1,21 @@
+[
+  {
+    "status": "draft",
+    "hubstaff_org_id": null,
+    "hubstaff_client_id": null,
+    "hubstaff_client_name": "EXAMPLE phantom client",
+    "hubstaff_project_id": "EXAMPLE",
+    "hubstaff_project_name": "EXAMPLE",
+    "hubstaff_user_id": "EXAMPLE",
+    "hubstaff_user_name": "EXAMPLE VA",
+    "hubstaff_bill_rate": null,
+    "qbo_customer_id": "EXAMPLE",
+    "qbo_customer_legal_name": "EXAMPLE Legal Name LLC",
+    "qbo_customer_dba": "EXAMPLE DBA",
+    "qbo_recurring_sales_receipt_id": "EXAMPLE",
+    "qbo_line_id": null,
+    "qbo_hours_field": "Qty",
+    "qbo_va_number": null,
+    "notes": "EXAMPLE ONLY. Not a real Helper Heroes client. Do not bill."
+  }
+]

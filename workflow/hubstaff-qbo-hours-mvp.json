@@ -1,0 +1,70 @@
+{
+  "name": "hubstaff-qbo-hours-mvp",
+  "version": "0.1.0",
+  "dry_run_default": true,
+  "live_billing": false,
+  "goal": "Update hours on an existing QBO recurring sales receipt from prior-week Hubstaff time. Do not create invoices. Do not write pay rates.",
+  "inputs": {
+    "week_start": { "type": "date", "description": "Prior week start" },
+    "week_end": { "type": "date", "description": "Prior week end, inclusive" },
+    "mapping_file": { "type": "csv", "description": "Rows with status=confirmed" },
+    "qbo_target": { "type": "string", "enum": ["phantom", "live"], "default": "phantom" }
+  },
+  "fail_closed": [
+    "missing mapping row",
+    "status != confirmed",
+    "qbo_target=live before phantom_validated",
+    "pay_rate present on a QBO write",
+    "Hubstaff endpoint returns empty hours"
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "name": "Pull prior-week VA hours from Hubstaff",
+      "hubstaff": {
+        "recommended_endpoint": "GET /v2/organizations/{organization_id}/timesheets",
+        "query": ["date[start]", "date[stop]", "include=users"],
+        "why": "Weekly aggregates for billing, not 10-minute activity blocks",
+        "jean_confirm": true,
+        "alternates": [
+          { "endpoint": "daily activities / daily totals", "jean_confirm": true },
+          { "endpoint": "time_entries", "use": "audit only, too granular for MVP hours" }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Map hours to Hubstaff project / member / client",
+      "uses": ["GET /v2/organizations/{id}/projects?include=clients", "members/users + bill_rate"],
+      "jean_confirm": true,
+      "never": ["pay_rate in QBO payload"]
+    },
+    {
+      "id": 3,
+      "name": "Translate to QBO customer / sales receipt structure",
+      "match_on": ["qbo_customer_id", "qbo_customer_legal_name", "qbo_customer_dba", "qbo_va_number"],
+      "do_not_fuzzy_match_names": true
+    },
+    {
+      "id": 4,
+      "name": "Update hours field on phantom QBO recurring sales receipt",
+      "qbo": {
+        "object": "Recurring Sales Receipt / Sales Receipt line",
+        "write": "Qty/hours on existing line",
+        "create_invoice": false,
+        "send": false,
+        "ach": false
+      }
+    },
+    {
+      "id": 5,
+      "name": "Validate vs Matt manual Excel before any live client",
+      "outputs": ["proposed_updates", "mismatches", "unmapped_hours"]
+    }
+  ],
+  "pilot_after_phantom": {
+    "candidate": "Gracious Living / Peter Sotos",
+    "blocked_until": "phantom_validated"
+  },
+  "out_of_scope": ["Wise payroll", "native Hubstaff QBO payroll sync", "500-client rollout"]
+}

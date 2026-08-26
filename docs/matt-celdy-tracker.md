@@ -90,7 +90,7 @@ Hubstaff org **730247**. `mapping/BLANK.csv` already had **67 project IDs** (see
 
 Project-level join: `mapping/BLANK.csv` (adds `client_name`, `legal_business_name`, `weekly_hours_col`, `tracker_status`).
 
-VA-level join: `mapping/from-tracker.csv` (one row per tracker assignment, QBO IDs blank, `status=draft`).
+VA-level join: `mapping/from-tracker.csv` (**106 matched** Client List assignments; QBO IDs blank, `status=draft`). Unmatched VA rows: `mapping/from-tracker-unmatched.csv` (**75** rows with `match_note`; no invented Hubstaff IDs).
 
 ### 12 Hubstaff projects not joined
 

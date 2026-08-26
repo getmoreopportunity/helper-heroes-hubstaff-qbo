@@ -12,7 +12,10 @@
     "hubstaff_project_name": { "type": ["string", "null"] },
     "hubstaff_user_id": { "type": "string" },
     "hubstaff_user_name": { "type": ["string", "null"] },
-    "hubstaff_bill_rate": { "type": ["number", "null"], "description": "Never send pay_rate to QBO" },
+    "hubstaff_bill_rate": {
+      "type": ["number", "null"],
+      "description": "Never send pay_rate to QBO. Do not copy tracker rate columns into QBO writes."
+    },
     "qbo_customer_id": { "type": "string" },
     "qbo_customer_legal_name": { "type": ["string", "null"] },
     "qbo_customer_dba": { "type": ["string", "null"] },
@@ -20,7 +23,56 @@
     "qbo_line_id": { "type": ["string", "null"] },
     "qbo_hours_field": { "type": "string" },
     "qbo_va_number": { "type": ["string", "null"] },
-    "notes": { "type": ["string", "null"] }
+    "client_name": {
+      "type": ["string", "null"],
+      "description": "Tracker DBA: Client List column Client Name"
+    },
+    "legal_business_name": {
+      "type": ["string", "null"],
+      "description": "Tracker Legal Business Name (QBO customer legal name candidate)"
+    },
+    "va_name": {
+      "type": ["string", "null"],
+      "description": "Tracker VA Name (from-tracker.csv; one row per VA assignment)"
+    },
+    "va_number": {
+      "type": ["string", "null"],
+      "description": "Parsed from VA Name (VA# / VA #). Maps toward qbo_va_number once Matt confirms."
+    },
+    "expected_hours": {
+      "type": ["number", "string", "null"],
+      "description": "Tracker Expected Hours Worked. Sparsely filled on Client List."
+    },
+    "actual_hours": {
+      "type": ["number", "string", "null"],
+      "description": "Tracker Actual Hours Worked. On Client List this currently holds contracted weekly hours (20/40), not last-week Hubstaff actuals."
+    },
+    "weekly_hours_col": {
+      "type": ["string", "null"],
+      "description": "Rolling weekly hours column header, e.g. HH061 (Aug 24-30). Source of truth for that week's billed hours once populated."
+    },
+    "weekly_hours_value": {
+      "type": ["number", "string", "null"],
+      "description": "Value in the current weekly hours column. Empty on ingest week of 2026-08-26."
+    },
+    "tracker_status": {
+      "type": ["string", "null"],
+      "description": "Tracker Status (Won, Interviewing, Discovery Call, ...)"
+    },
+    "position": {
+      "type": ["string", "null"],
+      "description": "Tracker Position (Recruiter, Scheduler, Hybrid VA, ...)"
+    },
+    "tracker_sheet_row": {
+      "type": ["integer", "null"],
+      "description": "Row number on Client List tab (for audit, not a billing key)"
+    },
+    "match_note": { "type": ["string", "null"] },
+    "notes": { "type": ["string", "null"] },
+    "tracker_rate_columns_never_write": {
+      "type": ["string", "null"],
+      "description": "TRACKER-ONLY / NEVER WRITE TO QBO: VA Hourly Rate to Client, VA Hourly Rate to HH PH, VAs Hourly Net Pay, Onboarding Fee. Named here so they are not copied into mapping CSVs or QBO payloads."
+    }
   },
   "additionalProperties": false
 }

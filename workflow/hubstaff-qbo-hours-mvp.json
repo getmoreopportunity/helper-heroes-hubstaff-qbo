@@ -1,37 +1,34 @@
 {
   "name": "hubstaff-qbo-hours-mvp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "dry_run_default": true,
   "live_billing": false,
   "goal": "Update hours on an existing QBO recurring sales receipt from prior-week Hubstaff time. Do not create invoices. Do not write pay rates.",
   "inputs": {
-    "week_start": {
-      "type": "date",
-      "description": "Prior week start"
-    },
-    "week_end": {
-      "type": "date",
-      "description": "Prior week end, inclusive"
-    },
+    "week_start": { "type": "date", "description": "Prior week start" },
+    "week_end": { "type": "date", "description": "Prior week end, inclusive" },
     "mapping_file": {
       "type": "csv",
-      "description": "Rows with status=confirmed"
+      "description": "Rows with status=confirmed. Use mapping/from-tracker.csv (VA-level) joined to Hubstaff project IDs; mapping/BLANK.csv is project-level."
     },
-    "qbo_target": {
-      "type": "string",
-      "enum": [
-        "phantom",
-        "live"
-      ],
-      "default": "phantom"
-    }
+    "tracker": {
+      "type": "google_sheet",
+      "title": "HELPER HEROES CLIENT LIST & TRACKER",
+      "url": "https://docs.google.com/spreadsheets/d/1MLutxPmOUVE06xz5OKsTeoH64AAjB8ZV0ewlwNGQeUA/edit",
+      "file_id": "1MLutxPmOUVE06xz5OKsTeoH64AAjB8ZV0ewlwNGQeUA",
+      "tab": "Client List",
+      "description": "Source of truth for VA hours and billing adjustments. Read-only. Do not edit the live Sheet from this workflow."
+    },
+    "qbo_target": { "type": "string", "enum": ["phantom", "live"], "default": "phantom" }
   },
   "fail_closed": [
     "missing mapping row",
     "status != confirmed",
     "qbo_target=live before phantom_validated",
     "pay_rate present on a QBO write",
-    "Hubstaff endpoint returns empty hours"
+    "Hubstaff endpoint returns empty hours",
+    "create_invoice true",
+    "write to live Hubstaff clients/projects/members/rates/hours"
   ],
   "steps": [
     {
@@ -39,24 +36,19 @@
       "name": "Pull prior-week VA hours from Hubstaff",
       "hubstaff": {
         "recommended_endpoint": "GET /v2/organizations/{organization_id}/timesheets",
-        "query": [
-          "date[start]",
-          "date[stop]",
-          "include=users"
-        ],
+        "query": ["date[start]", "date[stop]", "include=users"],
         "why": "Weekly aggregates for billing, not 10-minute activity blocks",
         "jean_confirm": true,
+        "mcp_submitted_to_jean": true,
         "alternates": [
-          {
-            "endpoint": "daily activities / daily totals",
-            "jean_confirm": true
-          },
-          {
-            "endpoint": "time_entries",
-            "use": "audit only, too granular for MVP hours"
-          }
+          { "endpoint": "daily activities / daily totals", "jean_confirm": true },
+          { "endpoint": "time_entries", "use": "audit only, too granular for MVP hours" }
         ]
-      }
+      },
+      "never": [
+        "create/update/delete Hubstaff clients, projects, members, rates, or hours",
+        "live Hubstaff writes of any kind"
+      ]
     },
     {
       "id": 2,
@@ -66,9 +58,7 @@
         "members/users + bill_rate"
       ],
       "jean_confirm": true,
-      "never": [
-        "pay_rate in QBO payload"
-      ]
+      "never": ["pay_rate in QBO payload"]
     },
     {
       "id": 3,
@@ -77,9 +67,13 @@
         "qbo_customer_id",
         "qbo_customer_legal_name",
         "qbo_customer_dba",
-        "qbo_va_number"
+        "legal_business_name",
+        "client_name",
+        "qbo_va_number",
+        "va_number"
       ],
-      "do_not_fuzzy_match_names": true
+      "do_not_fuzzy_match_names": true,
+      "dba_vs_legal": "Tracker Client Name is DBA; Legal Business Name is legal. QBO customer is expected to be legal; Hubstaff project names are often DBA/location."
     },
     {
       "id": 4,
@@ -91,27 +85,58 @@
         "send": false,
         "ach": false,
         "cadence": "Update before Monday confirm; ACH auto-sends Tuesday",
-        "hours_field": "UNKNOWN \u2014 ask Matt which field he edits"
-      }
+        "hours_field": "UNKNOWN — ask Matt which field he edits",
+        "target": "phantom only until phantom_validated"
+      },
+      "never": [
+        "create invoices",
+        "write pay_rate / VA Hourly Rate to Client / VA Hourly Rate to HH PH / VAs Hourly Net Pay to QBO"
+      ]
     },
     {
       "id": 5,
-      "name": "Validate vs Matt manual Excel before any live client",
-      "outputs": [
-        "proposed_updates",
-        "mismatches",
-        "unmapped_hours"
+      "name": "Reconcile vs Celdy tracker expected/actual/weekly hours (not a mystery Excel) before any live client",
+      "source_of_truth": {
+        "title": "HELPER HEROES CLIENT LIST & TRACKER",
+        "owner": "celdy@helperheroesph.com",
+        "shared_with": "josh@joshcollier.ai (edit) — workflow is read-only",
+        "url": "https://docs.google.com/spreadsheets/d/1MLutxPmOUVE06xz5OKsTeoH64AAjB8ZV0ewlwNGQeUA/edit",
+        "tab": "Client List",
+        "schema_doc": "docs/matt-celdy-tracker.md",
+        "hours_fields": {
+          "expected_hours": "Expected Hours Worked",
+          "actual_hours": "Actual Hours Worked (currently contracted weekly hours on Client List)",
+          "weekly_hours_col": "Rolling weekly column, currently HH061 (Aug 24-30). Won/Leads tabs still show stale HH053 (June 29- July 5)."
+        }
+      },
+      "compare": [
+        "Hubstaff prior-week hours vs tracker weekly column for that week",
+        "proposed QBO hours vs tracker expected/actual/weekly",
+        "unmapped Hubstaff projects vs unmatched tracker rows"
+      ],
+      "outputs": ["proposed_updates", "mismatches", "unmapped_hours"],
+      "success_means": "Proposed phantom QBO hours match what Matt would type from this tracker, not from a private mystery Excel.",
+      "never": [
+        "create invoices",
+        "write pay_rate to QBO",
+        "qbo_target=live",
+        "edit the Google Sheet"
       ]
     }
   ],
   "pilot_after_phantom": {
     "candidate": "Gracious Living / Peter Sotos",
+    "tracker_dba": "Assisting Hands North Chicago",
+    "tracker_legal": "Gracious Living Assistance Inc",
+    "hubstaff_project_id": "3889080",
+    "hubstaff_project_name": "Assisting Hands Chicago North",
     "blocked_until": "phantom_validated"
   },
   "out_of_scope": [
     "Wise payroll",
     "native Hubstaff QBO payroll sync",
-    "500-client rollout"
+    "500-client rollout",
+    "any live Hubstaff client/project/member/rate/hours writes"
   ],
   "qbo_cadence": {
     "source": "Matt Miller email 2026-08-24",
@@ -121,6 +146,9 @@
     "object": "QBO recurring transaction / sales receipt",
     "create_invoice": false,
     "hours_field_name": null,
-    "hours_field_note": "Matt updates 'information' on the recurring transaction. Exact QBO field (Qty vs custom vs line) is still an open question for Matt. Do not invent it."
+    "hours_field_note": "Matt updates 'information' on the recurring transaction. Exact QBO field (Qty vs custom vs line) is still an open question for Matt. Do not invent it.",
+    "hours_source_of_truth": "Celdy tracker Client List expected/actual/weekly hours (HH0xx), not a mystery Excel and not raw Hubstaff alone.",
+    "phantom_only": true,
+    "never_write_pay_rate": true
   }
 }

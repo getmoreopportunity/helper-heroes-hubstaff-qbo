@@ -16,6 +16,19 @@
     "qbo_line_id": null,
     "qbo_hours_field": "Qty",
     "qbo_va_number": null,
-    "notes": "EXAMPLE ONLY. Not a real Helper Heroes client. Do not bill."
+    "client_name": "EXAMPLE DBA",
+    "legal_business_name": "EXAMPLE Legal Name LLC",
+    "va_name": "EXAMPLE VA VA#1",
+    "va_number": "1",
+    "expected_hours": null,
+    "actual_hours": 40,
+    "weekly_hours_col": "HH061 (Aug 24-30)",
+    "weekly_hours_value": null,
+    "tracker_status": "Won",
+    "position": "Recruiter",
+    "tracker_sheet_row": null,
+    "match_note": "EXAMPLE ONLY. Not a real Helper Heroes client. Do not bill.",
+    "notes": "EXAMPLE ONLY. Not a real Helper Heroes client. Do not bill.",
+    "tracker_rate_columns_never_write": "VA Hourly Rate to Client / VA Hourly Rate to HH PH / VAs Hourly Net Pay / Onboarding Fee — never write to QBO"
   }
 ]

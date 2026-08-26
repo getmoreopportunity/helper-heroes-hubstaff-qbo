@@ -1,0 +1,76 @@
+status,hubstaff_org_id,hubstaff_project_id,hubstaff_project_name,client_name,legal_business_name,va_name,va_number,position,expected_hours,actual_hours,weekly_hours_col,weekly_hours_value,tracker_status,tracker_sheet_row,qbo_customer_id,qbo_customer_legal_name,qbo_customer_dba,qbo_recurring_sales_receipt_id,qbo_line_id,qbo_hours_field,match_note
+draft,730247,,,Assisting Hands of Melrose Park,Alpha Estia LLC,Alisha Marie Alimurung VA#1,1,Recruiter,20.0,,HH061 (Aug 24-30),,Contract Needed,21,,,,,,,No Hubstaff project for Melrose Park. Do not use generic Assisting Hands or Assisting Hands IL.
+draft,730247,,,Executive Home Care Tampa Bay FL,BonGrace Ventures,Laura Moscoso VA#1 (replacement),1,,,40.0,HH061 (Aug 24-30),,Won,28,,,,,,,No Hubstaff project for Tampa Bay. Do not use generic Executive Home Care.
+draft,730247,,,"Executive Home Care, Lake Washington","Executive Home Care, Lake Washington",Chesca Matricio VA#1,1,Part Time Virtual Recruiting Asstistant,,20.0,HH061 (Aug 24-30),,Won,60,,,,,,,No Hubstaff project for Lake Washington. Do not use generic Executive Home Care.
+draft,730247,,,First Light Home,Extraordinary Home Care,Kristel Corea VA#1,1,Scheduler #1,,20.0,HH061 (Aug 24-30),,Won,62,,,,,,,Ambiguous First Light Hubstaff projects (CA / Charlotte / Ohio). Not joined.
+draft,730247,,,First Light Home,Extraordinary Home Care,Yzabelle Guibelondo VA#2 (Replacement),2,Scheduler #2,,40.0,HH061 (Aug 24-30),,Won,63,,,,,,,Ambiguous First Light Hubstaff projects (CA / Charlotte / Ohio). Not joined.
+draft,730247,,,First Light Home,Extraordinary Home Care,Angelique Labalan VA#3,3,Part-Time Growth Marketing & Lead Specialist,20.0,,HH061 (Aug 24-30),,Won,64,,,,,,,Ambiguous First Light Hubstaff projects (CA / Charlotte / Ohio). Not joined.
+draft,730247,,,Gaddiel Homecare Services Inc.,Gaddiel Homecare Services Inc.,Diane Rivera VA#1,1,Recruiter (with Social Media),,30.0,HH061 (Aug 24-30),,Won,70,,,,,,,No Hubstaff project with this name.
+draft,730247,,,Senior Helpers Glendale AZ,MilesBrook LLC,Lloyd Salarda VA#1,1,Admin / Scheduler,,40.0,HH061 (Aug 24-30),,Won,73,,,,,,,Do not use Senior Helpers - Scottsdale AZ (different city/legal).
+draft,730247,,,"Hayes Enterprise, LLC","Hayes Enterprise, LLC",Nathalie Danganan VA#1,1,Part- Time Recruiter,,20.0,HH061 (Aug 24-30),,Won,81,,,,,,,Possible Hubstaff 'Executive Home Care - Tim' (contact Tim Hayes) but names do not match. Left unmatched.
+draft,730247,,,,,Bea Bulanadi,,"Unbilled Hours (August 3, 2026)- terminated VA",,,HH061 (Aug 24-30),,Won,84,,,,,,,Tracker row has no Client Name / Legal Business Name (unbilled/terminated VA note). Unmatched.
+draft,730247,,,52 Weeks Marketing,Homecare Marketing Solutions LLC,Deanna Wong VA#3,3,LTCI Specialist,,40.0,HH061 (Aug 24-30),,Won,85,,,,,,,"Internal/adjacent marketing row, not a Hubstaff client project."
+draft,730247,,,Abernathy Home Care,How's Work Inc. DBA,Avrie Osorio VA#1,1,Full-Time Scheduler,,40.0,HH061 (Aug 24-30),,Won,86,,,,,,,No Hubstaff project with this name.
+draft,730247,,,First Light Home Care,Maplewood Solutions LLC,Joan May Buenaventura VA#1,1,Recruiter,,30.0,HH061 (Aug 24-30),,Won,96,,,,,,,Ambiguous First Light Hubstaff projects. Not joined.
+draft,730247,,,Miller Helpers/ 52 Weeks,Miller Helpers/ 52 Weeks,Ram Zabate (IN-HOUSE),,Digital Marketing Specialist & Brand Manager,,40.0,HH061 (Aug 24-30),,Won,104,,,,,,,"In-house Miller Helpers marketing VAs, not a Hubstaff client project."
+draft,730247,,,Miller Helpers/ 52 Weeks,Miller Helpers/ 52 Weeks,RJ LYN (IN-HOUSE),,Social Media Manager/Admin Assistant,,20.0,HH061 (Aug 24-30),,Won,105,,,,,,,"In-house Miller Helpers marketing VAs, not a Hubstaff client project."
+draft,730247,,,Assisting Hands of Loudon County MD,Niyan Home Healthcare LCC,Zyril Hillario Villaluz VA#1,1,Part Time Recruiter,,20.0,HH061 (Aug 24-30),,Won,108,,,,,,,No Hubstaff project for Loudon County. Do not use Assisting Hands IL.
+draft,730247,,,Qualicare Az,Qualicare Az,Mariel Caisip VA#1,1,PT Scheduler,26.0,,HH061 (Aug 24-30),,Won,117,,,,,,,No Hubstaff Qualicare AZ project. Do not use Austin or Missouri Qualicare IDs.
+draft,730247,,,Qualicare Az,Qualicare Az,Kellyn Alabado VA#2,2,PT Recruiter,25.0,,HH061 (Aug 24-30),,Won,118,,,,,,,No Hubstaff Qualicare AZ project. Do not use Austin or Missouri Qualicare IDs.
+draft,730247,,,Assisting Hands Cave Creek AZ,Ring and Cross Inc,Charlyn Diane Rivera VA#1,1,Recruiter,,40.0,HH061 (Aug 24-30),,Won,120,,,,,,,No Hubstaff project for Cave Creek.
+draft,730247,,,Rose's Agency Home Care,Rose's Agency Home Care,Karylle Vitalli VA#1,1,Recruiter (English),,40.0,HH061 (Aug 24-30),,Won,121,,,,,,,No Hubstaff project with this name.
+draft,730247,,,Rose's Agency Home Care,Rose's Agency Home Care,Miguel Ramirez VA#2,2,Scheduler,,40.0,HH061 (Aug 24-30),,Won,122,,,,,,,No Hubstaff project with this name.
+draft,730247,,,Rose's Agency Home Care,Rose's Agency Home Care,Leticia Araujo VA#3,3,Recruiter,,40.0,HH061 (Aug 24-30),,Won,123,,,,,,,No Hubstaff project with this name.
+draft,730247,,,Rose's Agency Home Care,Rose's Agency Home Care,Alejandra Betancur VA#4- Replacement,4,Recruiter (Colombian),,40.0,HH061 (Aug 24-30),,Won,124,,,,,,,No Hubstaff project with this name.
+draft,730247,,,FirstLight Home Care of San Clemente,Ruitenberg Ventures Group,Kristianne Desales-VA#2,2,Scheduler,,40.0,HH061 (Aug 24-30),,Won,125,,,,,,,No dedicated Hubstaff project. Do not use First Light Home Care CA.
+draft,730247,,,Sheraton Caregivers,Sheraton Caregivers Inc,Asuka Guillermo VA#1,1,Executive Assistant,,40.0,HH061 (Aug 24-30),,Won,138,,,,,,,No Hubstaff project with this name.
+draft,730247,,,Sheraton Caregivers,Sheraton Caregivers Inc,Marejoy Mejia VA#2,2,On-Call Scheduler,,40.0,HH061 (Aug 24-30),,Won,139,,,,,,,No Hubstaff project with this name.
+draft,730247,,,Sheraton Caregivers,Sheraton Caregivers Inc,Desiree Faye Ancajas VA #4,4,On-Call Scheduler,,40.0,HH061 (Aug 24-30),,Won,140,,,,,,,No Hubstaff project with this name.
+draft,730247,,,Sheraton Caregivers,Sheraton Caregivers Inc,Emmanuel Juntilla VA #5,5,On-Call Scheduler,,40.0,HH061 (Aug 24-30),,Won,141,,,,,,,No Hubstaff project with this name.
+draft,730247,,,Sheraton Caregivers,Sheraton Caregivers Inc,Nicole Ann Tibalan VA#6,6,Full Time Scheduler,,40.0,HH061 (Aug 24-30),,Won,142,,,,,,,No Hubstaff project with this name.
+draft,730247,,,Sheraton Caregivers,Sheraton Caregivers Inc,Micha Antonio VA#7 Replacement,7,Scheduler,,40.0,HH061 (Aug 24-30),,Won,143,,,,,,,No Hubstaff project with this name.
+draft,730247,,,Sheraton Caregivers,Sheraton Caregivers Inc,Kristel Joanne Montesa VA #10,10,On-Call Scheduler,,40.0,HH061 (Aug 24-30),,Won,144,,,,,,,No Hubstaff project with this name.
+draft,730247,,,Sheraton Caregivers,Sheraton Caregivers Inc,Mariel Magpayo VA#8 (Replacement),8,On-Call Scheduler,,40.0,HH061 (Aug 24-30),,Won,145,,,,,,,No Hubstaff project with this name.
+draft,730247,,,Senior Helpers Fresno CA,TKS Care Services Inc,Hazel Dayrit VA#1,1,On-Call Scheduler,,32.0,HH061 (Aug 24-30),,Won,150,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,First Light Homecare,Sienna Shea Inc,,,Recruiter,20.0,,HH061 (Aug 24-30),,Follow Up,160,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Colorado CAre Assist,Hesed Home Care LLC dba Colorado CareAssist,,,,,,HH061 (Aug 24-30),,Follow Up,161,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,First Light Home,Extraordinary Home Care,,,Recruiter,,,HH061 (Aug 24-30),,Interviewing,162,,,,,,,Ambiguous First Light Hubstaff projects (CA / Charlotte / Ohio). Not joined.
+draft,730247,,,First Light Homecare,Aurosoph LLC,,,,,,HH061 (Aug 24-30),,Scheduling Interviews,163,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Visiting Angels,RJM Angels LLC,,,Scheduler,40.0,,HH061 (Aug 24-30),,Discovery Call,166,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,First Light Homecare,"First Light Homecare, Napa CA",,,Admin,,,HH061 (Aug 24-30),,Follow Up,167,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Executive Home Care,Eastwing Capital Ventures LLC,,,,,,HH061 (Aug 24-30),,Lost,168,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Interim Health Care,,,,On call Scheduler,,,HH061 (Aug 24-30),,Not Ready Now,169,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Trusted Home Care Solutions,Trusted Home Care Solutions,,,,,,HH061 (Aug 24-30),,Discovery Call,170,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Texas Helpers Inc.,Texas Helpers Inc.,,,On Call Scheduler #1,,,HH061 (Aug 24-30),,Job Description Needed,171,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Texas Helpers Inc.,Texas Helpers Inc.,,,On Call Scheduler #2,,,HH061 (Aug 24-30),,Job Description Needed,172,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Executive Home Care,Executive Home Care Southeast NH,,,"Recruiter, Scheduler or Hybrid",,,HH061 (Aug 24-30),,Job Description Needed,173,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Favor Health Care,Favor Health Care,,,Finance Assistant,,,HH061 (Aug 24-30),,Job Description Needed,174,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,First Light Home,MJP Management LLC,,,On Call Scheduler,,,HH061 (Aug 24-30),,Job Description Needed,175,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Harmony at Home Senior Care of Houston,Harmony at Home Senior Care of Houston,,,,20.0,,HH061 (Aug 24-30),,Job Description Needed,176,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Charter Oak Home Care,Charter Oak Home Care,,,Care Coordinator,,,HH061 (Aug 24-30),,Not Ready Now,177,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,First Light Home,"Omoiyari, Inc. dba FirstLight Home Care of Simi Valley",,,Scheduler,,,HH061 (Aug 24-30),,Scheduling Interviews,178,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Love In Home Senior Care,Love In Home Senior Care,,,,,,HH061 (Aug 24-30),,Job Description Needed,179,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Skylark Home Care LLC,Skylark Home Care LLC,,,Hybrid VA,,,HH061 (Aug 24-30),,Job Description Needed,180,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,2nd Family Miami Florida,"Stella Maris Care Partners, Inc. dba 2nd Family",,,Spanish VA,,,HH061 (Aug 24-30),,Not Ready Now,181,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Endless Nurture Home Care,Endless Nurture Home Care,,,,,,HH061 (Aug 24-30),,Discovery Call,182,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,"Dahlia Homecare Services, LLC","Dahlia Homecare Services, LLC",,,Scheduler,,,HH061 (Aug 24-30),,Not Ready Now,183,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Qualicare,Dykoniq LLC,,,,,,HH061 (Aug 24-30),,Discovery Call,184,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Golden Grace Caregiving,Golden Grace Caregiving,,,"Scheduler , Recruiter",,,HH061 (Aug 24-30),,Not Ready Now,185,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,"Metrowest Boston Home Care LLC, dba 2nd Family Metrowest Boston","Metrowest Boston Home Care LLC, dba 2nd Family Metrowest Boston",,,Recruiter,,,HH061 (Aug 24-30),,Discovery Call,186,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Senior Helpers Tx,"Afflatus Consulting LLC, DBA Senior Helpers of Greater Arlington, TX",,,Recruiter,,,HH061 (Aug 24-30),,Interviewing,187,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Senior Helpers Tx,"Afflatus Consulting LLC, DBA Senior Helpers of Greater Arlington, TX",,,On Call Scheduler,,,HH061 (Aug 24-30),,Interviewing,188,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Senior Helpers Tx,"Afflatus Consulting LLC, DBA Senior Helpers of Greater Arlington, TX",,,Scheduler,,,HH061 (Aug 24-30),,Interviewing,189,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Comfor Care,"TandaCare LLC, dba ComForCare Home Care",,,,,,HH061 (Aug 24-30),,Discovery Call,190,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,2c9 Ventures,2c9 Ventures,,,Recruiter,,,HH061 (Aug 24-30),,Discovery Call,191,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Peace of Mind Care,Peace of Mind Care,,,"Scheduler, After Hours",,,HH061 (Aug 24-30),,Job Description Needed,192,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,"Minga group llc dba firstlight home care of montclair, CA","Minga group llc dba firstlight home care of montclair, CA",,,PT Recruiter and Scheduler,,,HH061 (Aug 24-30),,Job Description Needed,193,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,HBCS Enterprises LLC,HBCS Enterprises LLC,,,,,,HH061 (Aug 24-30),,Discovery Call,194,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,SCLX Illuminate LLC DBA Mercy Works LLC,SCLX Illuminate LLC DBA Mercy Works LLC,,,,,,HH061 (Aug 24-30),,Discovery Call,195,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Visiting Nurse Association of Florida,Visiting Nurse Association of Florida,,,,,,HH061 (Aug 24-30),,Discovery Call,196,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Boston Nursing Care & Consulting,Boston Nursing Care & Consulting,,,,,,HH061 (Aug 24-30),,Discovery Call,197,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Nurses Case Management dba CareFor,Nurses Case Management dba CareFor,,,Admin/Intake,,,HH061 (Aug 24-30),,Job Description Needed,198,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Vitalis Healthcare,Vitalis Healthcare,,,"On Call Scheduler,  Recruiter/Day Time Receptionist",,,HH061 (Aug 24-30),,Job Description Needed,199,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,First Light Home Care,Genesis 1:3,,,,,,HH061 (Aug 24-30),,Discovery Call,200,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Integrity homecare and nursing,Integrity homecare and nursing,,,Hybrid VA (Recruiter/Marketing),,,HH061 (Aug 24-30),,Discovery Call,201,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,Executive Home Care - Newtown PA,Executive Home Care - Newtown PA,,,Scheduler,,,HH061 (Aug 24-30),,Job Description Needed,202,,,,,,,unmatched; no unique Hubstaff project ID
+draft,730247,,,"Faith Into Action, LLC DBA Assisting Hands Home Care Gilbert","Faith Into Action, LLC DBA Assisting Hands Home Care Gilbert",,,,,,HH061 (Aug 24-30),,Discovery Call,203,,,,,,,unmatched; no unique Hubstaff project ID

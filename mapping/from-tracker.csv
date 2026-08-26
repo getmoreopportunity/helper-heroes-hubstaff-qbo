@@ -1,0 +1,107 @@
+status,hubstaff_org_id,hubstaff_project_id,hubstaff_project_name,client_name,legal_business_name,va_name,va_number,position,expected_hours,actual_hours,weekly_hours_col,weekly_hours_value,tracker_status,tracker_sheet_row,qbo_customer_id,qbo_customer_legal_name,qbo_customer_dba,qbo_recurring_sales_receipt_id,qbo_line_id,qbo_hours_field,match_note
+draft,730247,4156615,AllCare Home Health Agency,All Care Home Health,Allcare Home Health Agency Inc,Ma. Theresa E. Pagarigan VA#2- Replacement,2,Admin/Onboarding Assistant,,40.0,HH061 (Aug 24-30),,Won,19,,,,,,,
+draft,730247,4156615,AllCare Home Health Agency,All Care Home Health,Allcare Home Health Agency Inc,Wendy Bajon VA#1 - Replacement,1,Recruiter,,40.0,HH061 (Aug 24-30),,Won,20,,,,,,,
+draft,730247,4156533,Executive Home Care of Alpharetta,Executive Home Care of Alpharetta,ATL Health Services LLC,Precious Pineda,,Recruiter,,20.0,HH061 (Aug 24-30),,Won,22,,,,,,,
+draft,730247,4153562,Attentive Home Care,Attentive Home Care,Attentive Home Care,Lorie Jane Zayco VA#1 (Terminated) w/ pending bill,1,PT Recruiter and PT Scheduler,,30.0,HH061 (Aug 24-30),,Won,23,,,,,,,
+draft,730247,4153562,Attentive Home Care,Attentive Home Care,Attentive Home Care,George Baybay VA#1 (Replacement),1,Part-Time Scheduler and Recruiter (Hybrid VA),,20.0,HH061 (Aug 24-30),,Won,24,,,,,,,
+draft,730247,4151970,FirstLight Home Care of Sylvania-Perrysburg,FirstLight Home Care of Sylvania- Perrysburg,BES Cares Inc,Cherry Flores VA#1,1,Hybrid (Recruiter/Scheduler),,40.0,HH061 (Aug 24-30),,Won,25,,,,,,,
+draft,730247,4150479,BlueDot Cares,BlueDot Cares,BlueDot Cares LLC,John Nelson dela Cruz VA#1,1,Scheduler,,42.0,HH061 (Aug 24-30),,Won,26,,,,,,,
+draft,730247,4150479,BlueDot Cares,BlueDot Cares,BlueDot Cares LLC,Donna Carampatana VA#2,2,Scheduler #2,,20.0,HH061 (Aug 24-30),,Won,27,,,,,,,
+draft,730247,4161563,Qualicare - Austin TX,"Qualicare, Austin TX","Capricare, LLC DBA",Jannah Jereza VA#1,1,Full Time Recruiter,,40.0,HH061 (Aug 24-30),,Won,29,,,,,,,
+draft,730247,3889009,Care Advantage,Care Advantage Inc,Care Advantage Inc,Michelle Videna VA#1,1,Recruiter,,40.0,HH061 (Aug 24-30),,Won,30,,,,,,,
+draft,730247,3889009,Care Advantage,Care Advantage,Care Advantage Inc,Hana Santos VA#2,2,Recruiter,,40.0,HH061 (Aug 24-30),,Won,31,,,,,,,
+draft,730247,3889009,Care Advantage,Care Advantage,Care Advantage Inc,Lea Salmo VA#3,3,Recruiter,,40.0,HH061 (Aug 24-30),,Won,32,,,,,,,
+draft,730247,3889009,Care Advantage,Care Advantage,Care Advantage Inc,John Henry Salado VA#4,4,Recruiter,,40.0,HH061 (Aug 24-30),,Won,33,,,,,,,
+draft,730247,3889009,Care Advantage,Care Advantage,Care Advantage Inc,Ma Cecilia Cobreros VA#5,5,Talent Acquisition Specialist,,40.0,HH061 (Aug 24-30),,Won,34,,,,,,,
+draft,730247,3889009,Care Advantage,Care Advantage,Care Advantage Inc,Charina Lauron VA#6,6,On-Call Scheduler,,40.0,HH061 (Aug 24-30),,Won,35,,,,,,,
+draft,730247,3889009,Care Advantage,Care Advantage,Care Advantage Inc,Rachelle Ballesteros VA#7,7,On-Call Scheduler,,40.0,HH061 (Aug 24-30),,Won,36,,,,,,,
+draft,730247,3889009,Care Advantage,Care Advantage,Care Advantage Inc,Joyce Sanchez VA #9,9,VBC Care Coordinator,,40.0,HH061 (Aug 24-30),,Won,37,,,,,,,
+draft,730247,3889009,Care Advantage,Care Advantage,Care Advantage Inc,Alvin Paggadu VA #10,10,Talent Acquisition Specialist,,40.0,HH061 (Aug 24-30),,Won,38,,,,,,,
+draft,730247,3889009,Care Advantage,Care Advantage,Care Advantage Inc,Jason Espilla VA#11,11,On-Call Scheduler,,20.0,HH061 (Aug 24-30),,Won,39,,,,,,,
+draft,730247,3889009,Care Advantage,Care Advantage,Care Advantage Inc,Katrina Berjida VA#13 Replacement VA,13,On-Call Scheduler,,20.0,HH061 (Aug 24-30),,Won,40,,,,,,,
+draft,730247,3889009,Care Advantage,Care Advantage,Care Advantage Inc,Richel Parac VA#14,14,On-Call Scheduler,,20.0,HH061 (Aug 24-30),,Won,41,,,,,,,
+draft,730247,3889009,Care Advantage,Care Advantage,Care Advantage Inc,Sarah Gomez VA#15,15,On-Call Scheduler,,20.0,HH061 (Aug 24-30),,Won,42,,,,,,,
+draft,730247,3889009,Care Advantage,Care Advantage,Care Advantage Inc,Jacklyn Felix VA#16,16,On-Call Scheduler,,20.0,HH061 (Aug 24-30),,Won,43,,,,,,,
+draft,730247,3889009,Care Advantage,Care Advantage,Care Advantage Inc,Jojie Bueno VA#17,17,On-Call Scheduler,,20.0,HH061 (Aug 24-30),,Won,44,,,,,,,
+draft,730247,3889009,Care Advantage,Care Advantage,Care Advantage Inc,Jan Lester dela Cruz VA#18,18,On-Call Scheduler,,20.0,HH061 (Aug 24-30),,Won,45,,,,,,,
+draft,730247,3889009,Care Advantage,Care Advantage,Care Advantage Inc,Czarina De Los Santos Rabacal VA#19,19,Recruiter,,40.0,HH061 (Aug 24-30),,Won,46,,,,,,,
+draft,730247,3889009,Care Advantage,Care Advantage,Care Advantage Inc,Veronica Cadiang VA#20,20,On-Call Scheduler,,20.0,HH061 (Aug 24-30),,Won,47,,,,,,,
+draft,730247,3889009,Care Advantage,Care Advantage,Care Advantage Inc,Joxbell John S. Pitos VA #21,21,On-Call Scheduler,,20.0,HH061 (Aug 24-30),,Won,48,,,,,,,
+draft,730247,4161560,Care Builders,Care Builders Home,Care Builders Home,Jeremae Javen VA#1,1,Part-Time Recruiter,,32.5,HH061 (Aug 24-30),,Won,49,,,,,,,
+draft,730247,4159461,Assisting Hands Central Milwaukee,Assisting Hands Milwaukee WI,Caring for Wisconsin Inc,Kristine de Padua VA#1,1,Recruiter,,40.0,HH061 (Aug 24-30),,Won,50,,,,,,,
+draft,730247,4163032,HomeWell Care Services NJ,Home Well Cares,Centurion Enterprises DBA HomeWell Care Services NJ,Cheiry Abella VA#1,1,Administrative Assistant,,20.0,HH061 (Aug 24-30),,Won,51,,,,,,,
+draft,730247,4156529,Assisting Hands,Assisting Hands,Chicagoland Senior Care,Lloyd Salarda VA#1,1,Full Time Scheduler,,40.0,HH061 (Aug 24-30),,Won,52,,,,,,,
+draft,730247,4159457,Comprehensive Home Health Solutions,Comprehensive Home Health Solutions,Comprehensive Home Health Solutions,Gemraida Macaspac VA#1,1,Scheduler,,40.0,HH061 (Aug 24-30),,Won,53,,,,,,,Same tracker client also has Hubstaff project 4144289 (Jullian Speegle split). Primary ID is the main CHHS project.
+draft,730247,4159457,Comprehensive Home Health Solutions,Comprehensive Home Health Solutions,Comprehensive Home Health Solutions,Khemberly Pilon VA#3,3,Scheduler,,40.0,HH061 (Aug 24-30),,Won,54,,,,,,,Same tracker client also has Hubstaff project 4144289 (Jullian Speegle split). Primary ID is the main CHHS project.
+draft,730247,4159457,Comprehensive Home Health Solutions,Comprehensive Home Health Solutions,Comprehensive Home Health Solutions,Angielen Arsenio VA#4,4,Scheduler,,40.0,HH061 (Aug 24-30),,Won,55,,,,,,,Same tracker client also has Hubstaff project 4144289 (Jullian Speegle split). Primary ID is the main CHHS project.
+draft,730247,4159457,Comprehensive Home Health Solutions,Comprehensive Home Health Solutions,Comprehensive Home Health Solutions,Joseph Ryan Padilla VA#5,5,Referral & Intake Coordinator,,40.0,HH061 (Aug 24-30),,Won,56,,,,,,,Same tracker client also has Hubstaff project 4144289 (Jullian Speegle split). Primary ID is the main CHHS project.
+draft,730247,4159457,Comprehensive Home Health Solutions,Comprehensive Home Health Solutions,Comprehensive Home Health Solutions,Lorelyn Gambong VA#7,7,Full Time Intake / Scheduling Coordinator,,40.0,HH061 (Aug 24-30),,Won,57,,,,,,,Same tracker client also has Hubstaff project 4144289 (Jullian Speegle split). Primary ID is the main CHHS project.
+draft,730247,4159457,Comprehensive Home Health Solutions,Comprehensive Home Health Solutions,Comprehensive Home Health Solutions,Bernadette Delantar VA#6 Replacement,6,Full Time Intake / Scheduling Coordinator,,40.0,HH061 (Aug 24-30),,Won,58,,,,,,,Same tracker client also has Hubstaff project 4144289 (Jullian Speegle split). Primary ID is the main CHHS project.
+draft,730247,4164808,Executive Home Care - Manassas,Executive Home Care Manassas VA,Executive Home Care of Manassas,Richelle Laoyon VA#1,1,Hybrid VA (Admin),,20.0,HH061 (Aug 24-30),,Won,59,,,,,,,
+draft,730247,4153549,Executive Home Care NE,Executive Home Care Omaha,Executive Home Care Omaha,Joyce Diaz VA#1,1,Hybrid (Recruiter/Scheduler),,20.0,HH061 (Aug 24-30),,Won,61,,,,,,,Omaha = Hubstaff Executive Home Care NE.
+draft,730247,4153518,Pando Home Care,Pando Home Care,"Family Matters In-Home Care, LLC",Katherine Mutia VA#1,1,Recruiter,,40.0,HH061 (Aug 24-30),,Won,65,,,,,,,
+draft,730247,4153518,Pando Home Care,Pando Home Care,"Family Matters In-Home Care, LLC",Ma Franisa Marcine VA#1,1,Finance Assistant (Billing & Payroll),,20.0,HH061 (Aug 24-30),,Won,66,,,,,,,
+draft,730247,4163035,FirstLight Home Care of Mission Viejo,FirstLight Home Care Mission Viejo,FirstLight Home Care Mission Viejo,Paul Vincent Encalado VA#1 (Replacement),1,Recruiter + Admin Tasks,,35.0,HH061 (Aug 24-30),,Won,67,,,,,,,
+draft,730247,4153523,ComForCare MD,Forever30 Home Care Inc dba ComForCare Home Care - Prince George's County,Forever30 Home Care Inc dba ComForCare Home Care - Prince George's County,Krizzia Holgado VA#1,1,Recruiter,,40.0,HH061 (Aug 24-30),,Won,68,,,,,,,Prince George's County MD = Hubstaff ComForCare MD
+draft,730247,4161552,Visiting Angels - WA,Visiting Angels WA,Fred and Debbie Inc,Jon Fabia VA#1,1,Afterhours Scheduler,,40.0,HH061 (Aug 24-30),,Won,69,,,,,,,
+draft,730247,4156519,Senior Helpers of Coastal OC,Senior Helpers South Orange County,Good Karma Home Care Inc,Riezel Mae Tangcalagan VA#2,2,Scheduler,,40.0,HH061 (Aug 24-30),,Won,71,,,,,,,Hubstaff name is Senior Helpers of Coastal OC (= South Orange County).
+draft,730247,4156519,Senior Helpers of Coastal OC,Senior Helpers South Orange County,Good Karma Home Care Inc,Shella Marie Son VA#1 (Replacement),1,Part-time Recruiter,,40.0,HH061 (Aug 24-30),,Won,72,,,,,,,Hubstaff name is Senior Helpers of Coastal OC (= South Orange County).
+draft,730247,3889080,Assisting Hands Chicago North,Assisting Hands North Chicago,Gracious Living Assistance Inc,Michael Adao VA#1,1,Hybrid VA,,40.0,HH061 (Aug 24-30),,Won,74,,,,,,,Gracious Living / Peter Sotos live-pilot candidate. Hubstaff project Assisting Hands Chicago North.
+draft,730247,3889080,Assisting Hands Chicago North,Assisting Hands North Chicago,Gracious Living Assistance Inc,Aida Garcia VA#2,2,Hybrid VA,,40.0,HH061 (Aug 24-30),,Won,75,,,,,,,Gracious Living / Peter Sotos live-pilot candidate. Hubstaff project Assisting Hands Chicago North.
+draft,730247,3889080,Assisting Hands Chicago North,Gracious Living Assistance Inc,Gracious Living Assistance Inc,June Krystel Lorenzo VA#3,3,Hybrid VA,,40.0,HH061 (Aug 24-30),,Won,76,,,,,,,Same legal as Assisting Hands North Chicago (VA#3 on that client).
+draft,730247,4157219,Interim Health Care - Utah,Interim Healthcare Utah,GSDED LLC,Mary Salamat VA#1,1,Full Time Recruiter,,40.0,HH061 (Aug 24-30),,Won,77,,,,,,,
+draft,730247,4157219,Interim Health Care - Utah,Interim HealthCare Utah,GSDED LLC,Christine Morta VA#2,2,Recruiter,,40.0,HH061 (Aug 24-30),,Won,78,,,,,,,
+draft,730247,4154830,Havencare,Havencare,Havencare,Baby May Diestro VA #1,1,"Recruiter + social media (FB, IG)",,20.0,HH061 (Aug 24-30),,Won,79,,,,,,,
+draft,730247,4164820,Quality 1 Care,Quality 1 Home Care,Quality 1 Home Care LLC,Beverlyn Cabahug VA#1,1,Recruiter / Scheduler,,40.0,HH061 (Aug 24-30),,Won,80,,,,,,,
+draft,730247,4116227,Help at Home Senior Care,Help at Home Senior Care,Help at Home Senior Care,Heart Adriane Bautista VA#2,2,After Hours Staffing Supervisor,,32.0,HH061 (Aug 24-30),,Won,82,,,,,,,
+draft,730247,4116227,Help at Home Senior Care,Help at Home Senior Care,Help at Home Senior Care,Maria Kristelle Platon Banawa VA#1 - Replacement,1,After Hours Staffing Supervisor,,30.0,HH061 (Aug 24-30),,Won,83,,,,,,,
+draft,730247,4153575,Executive Home Care of Augusta,Executive Home Care of Augusta,"Ishmael Investments, LLC",Irene Digman Fernandez,,Part-time Sheduler,,20.0,HH061 (Aug 24-30),,Won,87,,,,,,,
+draft,730247,4159462,Assisting Hands Orland Park IL,Assisting Hands Orland Park IL,JD Pearson Holdings LLC,Kimberly Shantee Lalwani VA#1,1,Hybrid VA,,20.0,HH061 (Aug 24-30),,Won,88,,,,,,,
+draft,730247,4157229,Qualicare Missourri,Qualicare,JSNM Home Care LLC,Veronica Cadiang VA#1,1,Recruiter Part time,,20.0,HH061 (Aug 24-30),,Won,89,,,,,,,Hubstaff project name is Qualicare Missourri (spelling as in Hubstaff).
+draft,730247,3889787,King's Grace Home Care,King's Grace Home Care,King's Grace Homecare LLC,Jefrey Famat VA#2,2,Recruiter/Scheduler,,40.0,HH061 (Aug 24-30),,Won,90,,,,,,,
+draft,730247,3889787,King's Grace Home Care,King's Grace Home Care,King's Grace Homecare LLC,Marlyn Caing VA#1,1,Recruiter/Scheduler,,30.0,HH061 (Aug 24-30),,Won,91,,,,,,,
+draft,730247,3889787,King's Grace Home Care,King's Grace Home Care,King's Grace Homecare LLC,Princess Bautista VA#3,3,Medical Biller,,30.0,HH061 (Aug 24-30),,Won,92,,,,,,,
+draft,730247,4161573,Life's Home Care,Life's at Home Care VA,Life's at Home Care LLC,Geraldine Naparota VA#1,1,Admin VA,,20.0,HH061 (Aug 24-30),,Won,93,,,,,,,
+draft,730247,4151974,Limitless Horizon CA,Limitless Horizons Inc.,Limitless Horizons Inc.,Christ Stephanie Campbell VA#1,1,EA and Operation Coordinator,,40.0,HH061 (Aug 24-30),,Won,94,,,,,,,
+draft,730247,4156557,ComForCare,ComForCare,M&M Quality Care,Vanessa Davantes VA#1,1,Recruiter,,25.0,HH061 (Aug 24-30),,Won,95,,,,,,,
+draft,730247,4153584,Executive Home Care of Delaware County,Executive Home Care of Delaware County,Matri Group Inc DBA,Marjunyl Sibayan VA#1- replacement,1,Recruiter,,20.0,HH061 (Aug 24-30),,Won,97,,,,,,,
+draft,730247,4159428,Golden Heart Senior Care,Golden Heart Ohio,Miami Valley Golden Heart LLC,Paula Oxales VA#1,1,Recruiter,,40.0,HH061 (Aug 24-30),,Won,98,,,,,,,
+draft,730247,4153110,Senior Helpers TN,Senior Helpers TN,Miller Helpers,Irma Torres VA#1,1,Scheduler,,40.0,HH061 (Aug 24-30),,Won,99,,,,,,,
+draft,730247,4153110,Senior Helpers TN,Senior Helpers TN,Miller Helpers,Herel Casasola VA#2,2,Scheduler,,45.0,HH061 (Aug 24-30),,Won,100,,,,,,,
+draft,730247,4153110,Senior Helpers TN,Senior Helpers TN,Miller Helpers,Deejay Galang VA#4,4,Recruiter,,40.0,HH061 (Aug 24-30),,Won,101,,,,,,,
+draft,730247,4153110,Senior Helpers TN,Senior Helpers TN,Miller Helpers,Hazel Mae Callano VA#5,5,Phone Support,,40.0,HH061 (Aug 24-30),,Won,102,,,,,,,
+draft,730247,4153110,Senior Helpers TN,Senior Helpers TN,Miller Helpers,Jose Marie Perpetua VA#6,6,Manager/Assistant to the Director of Ops,,40.0,HH061 (Aug 24-30),,Won,103,,,,,,,
+draft,730247,4153589,Modern Midwest Home Care,Modern Midwest Homecare,Modern Midwest Home Care LLC,Archie Emperado VA#2,2,Scheduler,,20.0,HH061 (Aug 24-30),,Won,106,,,,,,,
+draft,730247,4153589,Modern Midwest Home Care,Modern Midwest Homecare,Modern Midwest Home Care LLC,Rochelle Martelino VA#1,1,Recruiter,,20.0,HH061 (Aug 24-30),,Won,107,,,,,,,
+draft,730247,4153553,No Place Like Home Health Care,No Place Like Home Health,No Place Like Home Health LLC,Jennifer Dominguez VA#1,1,Part Time Recruiter,,30.0,HH061 (Aug 24-30),,Won,109,,,,,,,
+draft,730247,4164794,One You Love Home Care,One You Love Home Care Waco TX,One You Love Home Care Waco TX,Joven Mendiola VA#1,1,Hybrid VA,,20.0,HH061 (Aug 24-30),,Won,110,,,,,,,
+draft,730247,4153555,Phoenician Home Care,Phoenician Home Care,Phoenician Home Care,Camille Galido VA#1,1,Recruiter,,20.0,HH061 (Aug 24-30),,Won,111,,,,,,,
+draft,730247,4153555,Phoenician Home Care,Phoenician Home Care,Phoenician Home Care,Maridion Enaje VA#2,2,Recruiter,,20.0,HH061 (Aug 24-30),,Won,112,,,,,,,
+draft,730247,4163047,Physical 4 U Health,Physical 4 U Insurance,Physical 4 U Inc,Rizma Cabidog VA#1,1,Medical Biller,,40.0,HH061 (Aug 24-30),,Won,113,,,,,,,
+draft,730247,4163047,Physical 4 U Health,Physical 4 U Insurance,Physical 4 U Inc,Fabian Brochero VA#3,3,Home Care Intake & Staffing Coordinator,,40.0,HH061 (Aug 24-30),,Won,114,,,,,,,
+draft,730247,4150517,Assisting Hands Westlake,Assisting Hands Westlake,PTC Homecare Westlake Corp,Jocel Duay VA#2,2,Hybrid VA (After-Hours + Weekends Scheduler/Client Intake/Admin),,20.0,HH061 (Aug 24-30),,Won,115,,,,,,,
+draft,730247,4150517,Assisting Hands Westlake,Assisting Hands Westlake,PTC Homecare Westlake Corp,Anna Veronica Quilacio VA#1 (Replacement),1,Hybrid VA (After-Hours + Weekends Scheduler/Client Intake/Admin),,20.0,HH061 (Aug 24-30),,Won,116,,,,,,,
+draft,730247,4164820,Quality 1 Care,Quality 1 Home Care LLC,Quality 1 Home Care LLC,Beverlyn Cabahug VA#1,1,HYBRID,,40.0,HH061 (Aug 24-30),,Won,119,,,,,,,
+draft,730247,4140791,Senior Helpers - Rhode Island,Senior Helpers of Providence,S&K Care Group LLC,Ericka Roblas VA#1,1,Recruiter,,40.0,HH061 (Aug 24-30),,Won,126,,,,,,,Providence = Rhode Island.
+draft,730247,4159455,Executive Home Care NJ,Executive Home Care NJ,Sahay Care LLC,Mira Gardose Abad VA#1,1,Admin VA,,40.0,HH061 (Aug 24-30),,Won,127,,,,,,,
+draft,730247,4161584,Executive Home Care - San Diego,Executive Home Care San Diego CA,"San Diego Comfort Care dba Executive Home Care of San Diego, CA",Zesty Sto Domingo VA#1,1,Part Time Recruiter and Data Administrator,,20.0,HH061 (Aug 24-30),,Won,128,,,,,,,
+draft,730247,4161584,Executive Home Care - San Diego,Executive Home Care San Diego CA,"San Diego Comfort Care dba Executive Home Care of San Diego, CA",Karen Keith Soriano VA#2,2,Part-Time Scheduler,,20.0,HH061 (Aug 24-30),,Won,129,,,,,,,
+draft,730247,4153504,San Diego Community Living Service,San Diego Community Living Services,San Diego Community Living Services,Lady Louise Emperio VA#1,1,Full Time HR Coordinator,,40.0,HH061 (Aug 24-30),,Won,130,,,,,,,
+draft,730247,4153504,San Diego Community Living Service,San Diego Community Living Services,San Diego Community Living Services,Rechelle Villegas VA#2,2,Project Coordinator,,40.0,HH061 (Aug 24-30),,Won,131,,,,,,,
+draft,730247,4157225,Senior Helpers - Scottsdale AZ,Senior Helpers Scottsdale AZ,Senior Care Services Inc,Stephanie Caoile VA#1,1,Scheduler,,40.0,HH061 (Aug 24-30),,Won,132,,,,,,,
+draft,730247,4157225,Senior Helpers - Scottsdale AZ,Senior Helpers Scottsdale AZ,Senior Care Services Inc,Pocholo Locsin VA#2,2,Recruiter,,40.0,HH061 (Aug 24-30),,Won,133,,,,,,,
+draft,730247,4164790,Senior Helpers New Hampshire,Senior Helpers of Southern New Hampshire,Senior Helpers of Southern New Hampshire,Swirtty Mae Canlas VA#1,1,Recruiter,,40.0,HH061 (Aug 24-30),,Won,134,,,,,,,
+draft,730247,4164776,Senior Helpers - MN,Senior Helpers MN,Senior Helpers Twin Cities North,Klea Uy VA#1,1,Recruiter,,40.0,HH061 (Aug 24-30),,Won,135,,,,,,,
+draft,730247,4164776,Senior Helpers - MN,Senior Helpers MN,Senior Helpers Twin Cities North,Andrea Obdamen VA#2,2,Scheduler,,40.0,HH061 (Aug 24-30),,Won,136,,,,,,,
+draft,730247,4163059,Assisting Hands Dedham,Assisting Hands Dedham,Seniors and Kids Corporation,Ian Villegas VA#1,1,Recruiter,,40.0,HH061 (Aug 24-30),,Won,137,,,,,,,
+draft,730247,4154817,"Senior Helpers - Camp Hill, Carlisle, Hershey, York, Mifflinburg",Senior Helpers,"Susquehanna Senior LLC , dba",Jan Quiazon VA #1,1,On-Call Scheduler,,40.0,HH061 (Aug 24-30),,Won,146,,,,,,,PA locations Camp Hill / Carlisle / Hershey / York / Mifflinburg.
+draft,730247,4154817,"Senior Helpers - Camp Hill, Carlisle, Hershey, York, Mifflinburg",Senior Helpers,"Susquehanna Senior LLC , dba",Gretle Jade Espinosa VA #2,2,On-Call Scheduler,,40.0,HH061 (Aug 24-30),,Won,147,,,,,,,PA locations Camp Hill / Carlisle / Hershey / York / Mifflinburg.
+draft,730247,4163064,Assisting Hands CO,Assisting Hands CO,Sutton Family Enterprises LLC,Rachael Faith Rosales VA#1,1,Scheduler + Client Retentions,,40.0,HH061 (Aug 24-30),,Won,148,,,,,,,
+draft,730247,4161590,The Remarkable Agency,The Remarkable Agency,The Remarkable Agency,Anna Marie Torralba VA#1,1,Scheduler,,50.0,HH061 (Aug 24-30),,Won,149,,,,,,,
+draft,730247,4163067,Uplift Home Care,Uplift Home Care,Uplift Home Care,Janice Tinagan VA#1,1,Scheduler,,40.0,HH061 (Aug 24-30),,Won,151,,,,,,,
+draft,730247,4158776,Viora Family Services,Qualicare,Viora Family Services LLC,Michael Vincent Esquillo VA#1,1,Recruiter,,20.0,HH061 (Aug 24-30),,Won,152,,,,,,,"Matched on legal name Viora Family Services LLC, not the Qualicare DBA."
+draft,730247,4163024,Just Like Family Caregivers,We Care Just Like Family,We Care Just Like Family,Glaiza Camille Bobadilla VA#2 Replacement,2,Scheduler,,25.0,HH061 (Aug 24-30),,Won,153,,,,,,,
+draft,730247,3934273,Willow Heart Home Care,Willow Heart Home Care,Willow Heart Home Care LLC,Shaira Covero VA#1,1,Hybrid VA,,20.0,HH061 (Aug 24-30),,Won,154,,,,,,,
+draft,730247,4163047,Physical 4 U Health,Physical 4 U Insurance,Physical 4 U Inc,,,Bilingual Office Coordinator,20.0,,HH061 (Aug 24-30),,Interviewing,159,,,,,,,
+draft,730247,4159457,Comprehensive Home Health Solutions,Comprehensive Home Health Solutions,Comprehensive Home Health Solutions,Mabel Benitez VA#2 (TERMINATED),2,Scheduler,40.0,,HH061 (Aug 24-30),,Sourcing Replacement,164,,,,,,,Same tracker client also has Hubstaff project 4144289 (Jullian Speegle split). Primary ID is the main CHHS project.
+draft,730247,3889009,Care Advantage,Care Advantage,Care Advantage Inc,"May Anne ""Annie"" Lati VA#12 (Replacement)",12,On-Call Scheduler,20.0,,HH061 (Aug 24-30),,Interviewing,165,,,,,,,

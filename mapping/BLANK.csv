@@ -1,70 +1,70 @@
-status,hubstaff_org_id,hubstaff_client_id,hubstaff_client_name,hubstaff_project_id,hubstaff_project_name,hubstaff_user_id,hubstaff_user_name,hubstaff_bill_rate,qbo_customer_id,qbo_customer_legal_name,qbo_customer_dba,qbo_recurring_sales_receipt_id,qbo_line_id,qbo_hours_field,qbo_va_number,notes
-draft,730247,,,,,,,,,,,,,,,EXAMPLE — phantom client. Matt fills real QBO IDs. Do not bill.
-draft,730247,,,,,,,,,,,,,,,EXAMPLE — Gracious Living / Peter Sotos. Leave blank until phantom works. Hubstaff client name Peter Sotos is on the org.
-draft,730247,,,4156615,AllCare Home Health Agency,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4153572,Amada Senior Care,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4156529,Assisting Hands,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4159461,Assisting Hands Central Milwaukee,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,3889080,Assisting Hands Chicago North,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4163064,Assisting Hands CO,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4163059,Assisting Hands Dedham,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4158782,Assisting Hands IL,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4159462,Assisting Hands Orland Park IL,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4150517,Assisting Hands Westlake,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4153562,Attentive Home Care,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4150479,BlueDot Cares,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,3894718,BREAK,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,3889009,Care Advantage,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4161560,Care Builders,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4156557,ComForCare,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4153523,ComForCare MD,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4159457,Comprehensive Home Health Solutions,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4144289,Comprehensive Home Health Solutions - Jullian Speegle,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4151987,Executive Home Care,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4164808,Executive Home Care - Manassas,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4153549,Executive Home Care NE,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4159455,Executive Home Care NJ,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4156533,Executive Home Care of Alpharetta,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4153575,Executive Home Care of Augusta,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4153584,Executive Home Care of Delaware County,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4161584,Executive Home Care - San Diego,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4153569,Executive Home Care - Tim,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4163043,First Light Home Care CA,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4150498,First Light Home Care - Charlotte,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4163035,FirstLight Home Care of Mission Viejo,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4151970,FirstLight Home Care of Sylvania-Perrysburg,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4150506,First Light Home Ohio,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4159428,Golden Heart Senior Care,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4154830,Havencare,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4116227,Help at Home Senior Care,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,3888998,Helper Heroes' Project,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4163032,HomeWell Care Services NJ,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4164798,Interim Healthcare La Jolla SD,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4157219,Interim Health Care - Utah,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4163024,Just Like Family Caregivers,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,3889787,King's Grace Home Care,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4161573,Life's Home Care,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4151974,Limitless Horizon CA,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4153589,Modern Midwest Home Care,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4153553,No Place Like Home Health Care,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4164794,One You Love Home Care,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4153518,Pando Home Care,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4153555,Phoenician Home Care,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4163047,Physical 4 U Health,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4161563,Qualicare - Austin TX,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4157229,Qualicare Missourri,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4164820,Quality 1 Care,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4153504,San Diego Community Living Service,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4164784,Senior Helper CA,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4154817,"Senior Helpers - Camp Hill, Carlisle, Hershey, York, Mifflinburg",,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4164776,Senior Helpers - MN,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4164790,Senior Helpers New Hampshire,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4156519,Senior Helpers of Coastal OC,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4140791,Senior Helpers - Rhode Island,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4157225,Senior Helpers - Scottsdale AZ,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4153110,Senior Helpers TN,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4161590,The Remarkable Agency,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4163067,Uplift Home Care,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4158776,Viora Family Services,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,4161552,Visiting Angels - WA,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
-draft,730247,,,3934273,Willow Heart Home Care,,,,,,,,,,,Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
+status,hubstaff_org_id,hubstaff_client_id,hubstaff_client_name,hubstaff_project_id,hubstaff_project_name,hubstaff_user_id,hubstaff_user_name,hubstaff_bill_rate,qbo_customer_id,qbo_customer_legal_name,qbo_customer_dba,qbo_recurring_sales_receipt_id,qbo_line_id,qbo_hours_field,qbo_va_number,client_name,legal_business_name,weekly_hours_col,tracker_status,notes
+draft,730247,,,,,,,,,,,,,,,,,,,EXAMPLE — phantom client. Matt fills real QBO IDs. Do not bill.
+draft,730247,,,,,,,,,,,,,,,Assisting Hands North Chicago,Gracious Living Assistance Inc,HH061 (Aug 24-30),Won,EXAMPLE — Gracious Living / Peter Sotos. Leave blank until phantom works. Hubstaff client name Peter Sotos is on the org. Tracker legal is Gracious Living Assistance Inc; DBA Assisting Hands North Chicago maps to project 3889080.
+draft,730247,,,4156615,AllCare Home Health Agency,,,,,,,,,,,All Care Home Health,Allcare Home Health Agency Inc,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4156615. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4153572,Amada Senior Care,,,,,,,,,,,,,,,"Unmatched. Amada Senior Care is on the tracker Not Ready tab, not as an active Client List row. No ID invented. Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt."
+draft,730247,,,4156529,Assisting Hands,,,,,,,,,,,Assisting Hands,Chicagoland Senior Care,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4156529. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4159461,Assisting Hands Central Milwaukee,,,,,,,,,,,Assisting Hands Milwaukee WI,Caring for Wisconsin Inc,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4159461. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,3889080,Assisting Hands Chicago North,,,,,,,,,,,Assisting Hands North Chicago,Gracious Living Assistance Inc,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 3889080. QBO columns for Matt. Rates/phones/emails excluded. Multiple tracker DBA/legal variants: Assisting Hands North Chicago / Gracious Living Assistance Inc (Won) ; Gracious Living Assistance Inc / Gracious Living Assistance Inc (Won). Gracious Living / Peter Sotos live-pilot candidate. Hubstaff project Assisting Hands Chicago North.
+draft,730247,,,4163064,Assisting Hands CO,,,,,,,,,,,Assisting Hands CO,Sutton Family Enterprises LLC,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4163064. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4163059,Assisting Hands Dedham,,,,,,,,,,,Assisting Hands Dedham,Seniors and Kids Corporation,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4163059. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4158782,Assisting Hands IL,,,,,,,,,,,,,,,"Unmatched. Assisting Hands IL is ambiguous (Melrose Park, Palos Heights, other IL). Location-specific projects already mapped. No ID invented. Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt."
+draft,730247,,,4159462,Assisting Hands Orland Park IL,,,,,,,,,,,Assisting Hands Orland Park IL,JD Pearson Holdings LLC,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4159462. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4150517,Assisting Hands Westlake,,,,,,,,,,,Assisting Hands Westlake,PTC Homecare Westlake Corp,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4150517. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4153562,Attentive Home Care,,,,,,,,,,,Attentive Home Care,Attentive Home Care,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4153562. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4150479,BlueDot Cares,,,,,,,,,,,BlueDot Cares,BlueDot Cares LLC,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4150479. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,3894718,BREAK,,,,,,,,,,,,,,,"Internal Hubstaff project (BREAK), not a client tracker row. Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt."
+draft,730247,,,3889009,Care Advantage,,,,,,,,,,,Care Advantage Inc,Care Advantage Inc,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 3889009. QBO columns for Matt. Rates/phones/emails excluded. Multiple tracker DBA/legal variants: Care Advantage Inc / Care Advantage Inc (Won) ; Care Advantage / Care Advantage Inc (Won) ; Care Advantage / Care Advantage Inc (Interviewing)
+draft,730247,,,4161560,Care Builders,,,,,,,,,,,Care Builders Home,Care Builders Home,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4161560. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4156557,ComForCare,,,,,,,,,,,ComForCare,M&M Quality Care,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4156557. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4153523,ComForCare MD,,,,,,,,,,,Forever30 Home Care Inc dba ComForCare Home Care - Prince George's County,Forever30 Home Care Inc dba ComForCare Home Care - Prince George's County,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4153523. QBO columns for Matt. Rates/phones/emails excluded. Prince George's County MD = Hubstaff ComForCare MD
+draft,730247,,,4159457,Comprehensive Home Health Solutions,,,,,,,,,,,Comprehensive Home Health Solutions,Comprehensive Home Health Solutions,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4159457. QBO columns for Matt. Rates/phones/emails excluded. Same tracker client also has Hubstaff project 4144289 (Jullian Speegle split). Primary ID is the main CHHS project.
+draft,730247,,,4144289,Comprehensive Home Health Solutions - Jullian Speegle,,,,,,,,,,,,,,,Same tracker client as Comprehensive Home Health Solutions (4159457). Hubstaff split by Jullian Speegle. Tracker rows joined to 4159457 only so we do not invent a per-VA project split. Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
+draft,730247,,,4151987,Executive Home Care,,,,,,,,,,,,,,,Unmatched. Generic Executive Home Care is ambiguous across many location DBAs. Location-specific projects already mapped. No ID invented. Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
+draft,730247,,,4164808,Executive Home Care - Manassas,,,,,,,,,,,Executive Home Care Manassas VA,Executive Home Care of Manassas,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4164808. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4153549,Executive Home Care NE,,,,,,,,,,,Executive Home Care Omaha,Executive Home Care Omaha,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4153549. QBO columns for Matt. Rates/phones/emails excluded. Omaha = Hubstaff Executive Home Care NE.
+draft,730247,,,4159455,Executive Home Care NJ,,,,,,,,,,,Executive Home Care NJ,Sahay Care LLC,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4159455. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4156533,Executive Home Care of Alpharetta,,,,,,,,,,,Executive Home Care of Alpharetta,ATL Health Services LLC,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4156533. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4153575,Executive Home Care of Augusta,,,,,,,,,,,Executive Home Care of Augusta,"Ishmael Investments, LLC",HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4153575. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4153584,Executive Home Care of Delaware County,,,,,,,,,,,Executive Home Care of Delaware County,Matri Group Inc DBA,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4153584. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4161584,Executive Home Care - San Diego,,,,,,,,,,,Executive Home Care San Diego CA,"San Diego Comfort Care dba Executive Home Care of San Diego, CA",HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4161584. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4153569,Executive Home Care - Tim,,,,,,,,,,,,,,,"Unmatched. Possible tracker Hayes Enterprise, LLC (contact Tim Hayes) but Client Name / Legal do not equal 'Executive Home Care - Tim'. No ID invented. Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt."
+draft,730247,,,4163043,First Light Home Care CA,,,,,,,,,,,,,,,"Unmatched. First Light Home Care CA is ambiguous (San Clemente, Napa, Montclair, others). Mission Viejo has its own project. No ID invented. Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt."
+draft,730247,,,4150498,First Light Home Care - Charlotte,,,,,,,,,,,,,,,Unmatched. First Light Home Care - Charlotte not found as a Client Name / Legal Business Name on the tracker. Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
+draft,730247,,,4163035,FirstLight Home Care of Mission Viejo,,,,,,,,,,,FirstLight Home Care Mission Viejo,FirstLight Home Care Mission Viejo,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4163035. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4151970,FirstLight Home Care of Sylvania-Perrysburg,,,,,,,,,,,FirstLight Home Care of Sylvania- Perrysburg,BES Cares Inc,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4151970. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4150506,First Light Home Ohio,,,,,,,,,,,,,,,Unmatched. First Light Home Ohio is ambiguous (Sylvania-Perrysburg already has its own project). No ID invented. Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
+draft,730247,,,4159428,Golden Heart Senior Care,,,,,,,,,,,Golden Heart Ohio,Miami Valley Golden Heart LLC,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4159428. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4154830,Havencare,,,,,,,,,,,Havencare,Havencare,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4154830. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4116227,Help at Home Senior Care,,,,,,,,,,,Help at Home Senior Care,Help at Home Senior Care,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4116227. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,3888998,Helper Heroes' Project,,,,,,,,,,,,,,,"Internal Hubstaff project (Helper Heroes' Project), not a client tracker row. Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt."
+draft,730247,,,4163032,HomeWell Care Services NJ,,,,,,,,,,,Home Well Cares,Centurion Enterprises DBA HomeWell Care Services NJ,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4163032. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4164798,Interim Healthcare La Jolla SD,,,,,,,,,,,,,,,Unmatched. Interim Healthcare La Jolla SD not found as a Client Name / Legal Business Name on the tracker. Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
+draft,730247,,,4157219,Interim Health Care - Utah,,,,,,,,,,,Interim Healthcare Utah,GSDED LLC,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4157219. QBO columns for Matt. Rates/phones/emails excluded. Multiple tracker DBA/legal variants: Interim Healthcare Utah / GSDED LLC (Won) ; Interim HealthCare Utah / GSDED LLC (Won)
+draft,730247,,,4163024,Just Like Family Caregivers,,,,,,,,,,,We Care Just Like Family,We Care Just Like Family,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4163024. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,3889787,King's Grace Home Care,,,,,,,,,,,King's Grace Home Care,King's Grace Homecare LLC,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 3889787. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4161573,Life's Home Care,,,,,,,,,,,Life's at Home Care VA,Life's at Home Care LLC,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4161573. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4151974,Limitless Horizon CA,,,,,,,,,,,Limitless Horizons Inc.,Limitless Horizons Inc.,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4151974. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4153589,Modern Midwest Home Care,,,,,,,,,,,Modern Midwest Homecare,Modern Midwest Home Care LLC,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4153589. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4153553,No Place Like Home Health Care,,,,,,,,,,,No Place Like Home Health,No Place Like Home Health LLC,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4153553. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4164794,One You Love Home Care,,,,,,,,,,,One You Love Home Care Waco TX,One You Love Home Care Waco TX,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4164794. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4153518,Pando Home Care,,,,,,,,,,,Pando Home Care,"Family Matters In-Home Care, LLC",HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4153518. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4153555,Phoenician Home Care,,,,,,,,,,,Phoenician Home Care,Phoenician Home Care,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4153555. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4163047,Physical 4 U Health,,,,,,,,,,,Physical 4 U Insurance,Physical 4 U Inc,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4163047. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4161563,Qualicare - Austin TX,,,,,,,,,,,"Qualicare, Austin TX","Capricare, LLC DBA",HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4161563. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4157229,Qualicare Missourri,,,,,,,,,,,Qualicare,JSNM Home Care LLC,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4157229. QBO columns for Matt. Rates/phones/emails excluded. Hubstaff project name is Qualicare Missourri (spelling as in Hubstaff).
+draft,730247,,,4164820,Quality 1 Care,,,,,,,,,,,Quality 1 Home Care,Quality 1 Home Care LLC,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4164820. QBO columns for Matt. Rates/phones/emails excluded. Multiple tracker DBA/legal variants: Quality 1 Home Care / Quality 1 Home Care LLC (Won) ; Quality 1 Home Care LLC / Quality 1 Home Care LLC (Won)
+draft,730247,,,4153504,San Diego Community Living Service,,,,,,,,,,,San Diego Community Living Services,San Diego Community Living Services,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4153504. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4164784,Senior Helper CA,,,,,,,,,,,,,,,Unmatched. Senior Helper CA is ambiguous (Fresno CA vs other CA SH). Coastal OC already mapped to South Orange County. No ID invented. Hubstaff IDs seeded 2026-08-26 from org 730247. QBO columns for Matt.
+draft,730247,,,4154817,"Senior Helpers - Camp Hill, Carlisle, Hershey, York, Mifflinburg",,,,,,,,,,,Senior Helpers,"Susquehanna Senior LLC , dba",HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4154817. QBO columns for Matt. Rates/phones/emails excluded. PA locations Camp Hill / Carlisle / Hershey / York / Mifflinburg.
+draft,730247,,,4164776,Senior Helpers - MN,,,,,,,,,,,Senior Helpers MN,Senior Helpers Twin Cities North,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4164776. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4164790,Senior Helpers New Hampshire,,,,,,,,,,,Senior Helpers of Southern New Hampshire,Senior Helpers of Southern New Hampshire,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4164790. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4156519,Senior Helpers of Coastal OC,,,,,,,,,,,Senior Helpers South Orange County,Good Karma Home Care Inc,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4156519. QBO columns for Matt. Rates/phones/emails excluded. Hubstaff name is Senior Helpers of Coastal OC (= South Orange County).
+draft,730247,,,4140791,Senior Helpers - Rhode Island,,,,,,,,,,,Senior Helpers of Providence,S&K Care Group LLC,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4140791. QBO columns for Matt. Rates/phones/emails excluded. Providence = Rhode Island.
+draft,730247,,,4157225,Senior Helpers - Scottsdale AZ,,,,,,,,,,,Senior Helpers Scottsdale AZ,Senior Care Services Inc,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4157225. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4153110,Senior Helpers TN,,,,,,,,,,,Senior Helpers TN,Miller Helpers,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4153110. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4161590,The Remarkable Agency,,,,,,,,,,,The Remarkable Agency,The Remarkable Agency,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4161590. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4163067,Uplift Home Care,,,,,,,,,,,Uplift Home Care,Uplift Home Care,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4163067. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,4158776,Viora Family Services,,,,,,,,,,,Qualicare,Viora Family Services LLC,HH061 (Aug 24-30),Won,"Matched tracker Client Name / Legal to Hubstaff project 4158776. QBO columns for Matt. Rates/phones/emails excluded. Matched on legal name Viora Family Services LLC, not the Qualicare DBA."
+draft,730247,,,4161552,Visiting Angels - WA,,,,,,,,,,,Visiting Angels WA,Fred and Debbie Inc,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 4161552. QBO columns for Matt. Rates/phones/emails excluded.
+draft,730247,,,3934273,Willow Heart Home Care,,,,,,,,,,,Willow Heart Home Care,Willow Heart Home Care LLC,HH061 (Aug 24-30),Won,Matched tracker Client Name / Legal to Hubstaff project 3934273. QBO columns for Matt. Rates/phones/emails excluded.

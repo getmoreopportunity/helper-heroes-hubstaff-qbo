@@ -68,8 +68,9 @@ One client can have many VA rows. Mapping is therefore VA-level in `mapping/from
 8. No Hubstaff client/project/member/rate/hours writes
 
 ## Mapping files
-- `mapping/BLANK.csv` — 67 Hubstaff project IDs (org 730247) plus two example rows. Tracker DBA/legal filled where uniquely matched. QBO IDs blank. `status=draft`.
-- `mapping/from-tracker.csv` — one row per tracker Client List assignment, joined to those project IDs when the name is unique. Unmatched rows kept with a note.
+- `mapping/BLANK.csv` — 67 Hubstaff project IDs (org 730247) plus two example rows. Tracker DBA/legal filled where uniquely matched (55 of 67). QBO IDs blank. `status=draft`.
+- `mapping/from-tracker.csv` — 106 VA-level Client List rows uniquely matched to those project IDs. QBO IDs blank. `status=draft`. No rates/phones/emails.
+- `mapping/from-tracker-unmatched.csv` — 75 Client List rows with no unique Hubstaff project ID (notes only; no invented IDs).
 - `mapping/schema.json` — includes tracker fields. Names the rate columns as tracker-only / never write to QBO.
 
 Drive copies: https://drive.google.com/drive/folders/1deRJYHERbViADjff5KStMRamNYfY_Cd0

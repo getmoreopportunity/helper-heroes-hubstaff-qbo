@@ -9,6 +9,8 @@ No live keys. No live billing. Phantom QBO client first, then Gracious Living / 
 
 Jean Fin (Hubstaff): MCP already submitted. Review `workflow/hubstaff-qbo-hours-mvp.json` for endpoint selection (timesheets vs daily totals vs time_entries).
 
+Paste commands (Grok + Codex): [`docs/hubstaff-mcp-setup.md`](docs/hubstaff-mcp-setup.md).
+
 ## Source of truth — Celdy / Matt tracker
 
 Live Google Sheet (read-only for this repo; do not edit it from automation):

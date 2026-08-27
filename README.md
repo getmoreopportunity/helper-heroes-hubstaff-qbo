@@ -1,7 +1,9 @@
 # Helper Heroes — Hubstaff → QBO hours
 
 Custom API/MCP workflow. **Not** the native Hubstaff→QBO integration (payroll-only).
-We do **not** create new QBO invoices. Matt updates existing QBO **recurring sales receipts**; he confirms Monday and ACH auto-sends Tuesday. Exact hours-field name in QBO is still TBD with Matt.
+We do **not** create new QBO invoices. Matt updates existing QBO **recurring sales receipts**; he confirms Monday and ACH auto-sends Tuesday.
+
+**QBO model (Alexander Escobedo, Intuit, 2026-08-27):** each VA is a QBO **Product/Service (Service)** with optional standard client bill rate + a Chart of Accounts revenue account. Sales receipts are populated from those Services (VA name, rate, hours on the line). One QBO **customer per real client**, not per VA. If that works, **merge** extra customer records later so old receipts stay on the merged customer. Details: [`docs/from-alexander-qbo.md`](docs/from-alexander-qbo.md). Do not merge live customers from this repo. Phantom first.
 
 No live keys. No live billing. Phantom QBO client first, then Gracious Living / Peter Sotos.
 
@@ -37,42 +39,44 @@ This tracker is the **source of truth for VA hours and billing adjustments**. Hu
 | **HH061 (Aug 24-30)** | Current rolling **weekly hours** column (empty on 2026-08-26 ingest). Code rolls (HH053, HH061, …) |
 | **Status** | Won / pipeline (Discovery Call, Interviewing, …) |
 
-Rate columns (VA Hourly Rate to Client / HH PH / Net Pay) and phones/emails stay **out of mapping CSVs** and are **never written to QBO**.
+HH PH / net pay stay **out of mapping CSVs** and are **never written to QBO**. Client bill rate may live on the QBO Service item (Alexander). That is not Hubstaff pay.
 
 One client can have many VA rows. Mapping is therefore VA-level in `mapping/from-tracker.csv` and project-level in `mapping/BLANK.csv`.
 
 ## Plan
 1. Fill mapping from the live tracker (legal vs DBA, VA number, hours fields) joined to Hubstaff project IDs already in `mapping/BLANK.csv` (org 730247). Unmatched rows stay unmatched — no fuzzy-invented IDs.
-2. Matt creates a phantom QBO client. No live ACH.
+2. Matt creates a phantom QBO **customer** plus phantom **VA Services** (revenue account TBD). No live ACH. No live customer merge.
 3. Josh gets Hubstaff developer access, creates the OAuth app (`http://localhost:44444/callback`), shares **only** the application ID with Jean.
 4. Jean enables MCP and confirms endpoints. **MCP already submitted to Jean.**
-5. Dry-run prior-week hours → phantom hours field → reconcile vs this tracker (expected / actual / weekly HH0xx). Still phantom QBO only. Still never create invoices. Still never write `pay_rate` to QBO.
-6. First live pilot only after that: Gracious Living / Peter Sotos (tracker DBA **Assisting Hands North Chicago**, legal **Gracious Living Assistance Inc**, Hubstaff project **Assisting Hands Chicago North** `3889080`).
+5. Dry-run prior-week hours → phantom sales-receipt Service lines (name / rate / hours) → reconcile vs this tracker. Still phantom QBO only. Still never create invoices. Still never write Hubstaff/VA pay rates to QBO.
+6. First live pilot only after that: Gracious Living / Peter Sotos (tracker DBA **Assisting Hands North Chicago**, legal **Gracious Living Assistance Inc**, Hubstaff project **Assisting Hands Chicago North** `3889080`). Customer merge only if that model holds, and only Matt/Alexander.
 
 ## Owners
 | Who | Does |
 |---|---|
 | Josh | This repo + OAuth later. Never email the client secret. Never edit live Hubstaff clients. |
-| Matt | Phantom QBO client + mapping rows / QBO IDs. Hours adjustments live on the Celdy tracker. |
+| Matt | Phantom QBO customer + VA Services + mapping IDs. Hours adjustments live on the Celdy tracker. Customer merge only after phantom works. |
 | Celdy | Owns the live Client List & Tracker (hours/billing source of truth). |
 | Jean | MCP (already submitted) + Hubstaff endpoint review. |
+| Alexander | Intuit QBO model (VA = Service item). |
 | Nomfundo | Hubstaff permissions / Josh developer access. |
 | Andrew | Check-in. Wise payroll with Celdy is a **separate** workstream. |
 
 ## MVP success
-1. Hubstaff project → correct QBO customer
-2. Hubstaff member/VA → correct QBO billing line
+1. Hubstaff project → correct QBO customer (real client, not a VA-as-customer)
+2. Hubstaff member/VA → correct QBO **Service** line on the sales receipt
 3. Legal vs DBA handled
-4. Correct hours in the correct QBO field
+4. Correct hours and client bill rate on that Service line
 5. Rounding defined if included
 6. Reconciles vs the Celdy tracker (expected / actual / weekly hours)
 7. No live billing until phantom is validated
 8. No Hubstaff client/project/member/rate/hours writes
+9. No live customer merge from this workflow
 
 ## Mapping files
 - `mapping/BLANK.csv` — 67 Hubstaff project IDs (org 730247) plus two example rows. Tracker DBA/legal filled where uniquely matched (55 of 67). QBO IDs blank. `status=draft`.
 - `mapping/from-tracker.csv` — 106 VA-level Client List rows uniquely matched to those project IDs. QBO IDs blank. `status=draft`. No rates/phones/emails.
 - `mapping/from-tracker-unmatched.csv` — 75 Client List rows with no unique Hubstaff project ID (notes only; no invented IDs).
-- `mapping/schema.json` — includes tracker fields. Names the rate columns as tracker-only / never write to QBO.
+- `mapping/schema.json` — includes tracker fields plus QBO Service item fields. HH PH / net pay never write to QBO.
 
 Drive copies: https://drive.google.com/drive/folders/1deRJYHERbViADjff5KStMRamNYfY_Cd0

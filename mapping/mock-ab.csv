@@ -1,0 +1,5 @@
+arm,status,qbo_customer_legal_name,qbo_customer_dba,va_name,va_number,qbo_item_id,qbo_service_name,qbo_revenue_account_id,qbo_service_rate,qbo_recurring_sales_receipt_id,qbo_line_id,qbo_hours_field,weekly_hours_value,notes
+current,draft,HH MOCK Current VA One,HH MOCK Current VA One,HH MOCK VA One,1,,,,1.00,,,Qty,40,PHANTOM. Current setup: VA identity is the QBO customer. Matt fills QBO IDs after create. Do not send. Do not ACH.
+current,draft,HH MOCK Current VA Two,HH MOCK Current VA Two,HH MOCK VA Two,2,,,,1.00,,,Qty,20,PHANTOM. Current setup: VA identity is the QBO customer. Matt fills QBO IDs after create. Do not send. Do not ACH.
+alexander,draft,HH MOCK Alexander Client,HH MOCK Alexander Client,HH MOCK VA One,1,,HH MOCK VA One,,1.00,,,Qty,40,PHANTOM. Alexander: one client customer; this VA is a Service line. Revenue account HH MOCK VA Services. Do not send. Do not ACH.
+alexander,draft,HH MOCK Alexander Client,HH MOCK Alexander Client,HH MOCK VA Two,2,,HH MOCK VA Two,,1.00,,,Qty,20,PHANTOM. Alexander: one client customer; this VA is a Service line. Revenue account HH MOCK VA Services. Do not send. Do not ACH.

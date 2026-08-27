@@ -1,0 +1,85 @@
+{
+  "name": "mock-ab-current-vs-alexander",
+  "dry_run": true,
+  "live_billing": false,
+  "qbo_target": "phantom",
+  "week_start": "2026-08-17",
+  "week_end": "2026-08-23",
+  "hours_are_sample": true,
+  "hours_source": "Invented mock hours (40 + 20). Not Hubstaff. Not the Celdy tracker.",
+  "example_client_bill_rate": 1.0,
+  "never": [
+    "Hubstaff writes",
+    "live QBO customers",
+    "invoices",
+    "send / ACH",
+    "pay_rate / HH PH / net pay",
+    "customer merge"
+  ],
+  "input_hours": [
+    { "va_name": "HH MOCK VA One", "va_number": "1", "hours": 40, "rate": 1.0, "amount": 40.0 },
+    { "va_name": "HH MOCK VA Two", "va_number": "2", "hours": 20, "rate": 1.0, "amount": 20.0 }
+  ],
+  "current_setup": {
+    "label": "Mock A — VA as QBO customer",
+    "customers": [
+      "HH MOCK Current VA One",
+      "HH MOCK Current VA Two"
+    ],
+    "receipts": [
+      {
+        "customer": "HH MOCK Current VA One",
+        "va_identity": "customer name",
+        "item": null,
+        "qty": 40,
+        "rate": 1.0,
+        "amount": 40.0
+      },
+      {
+        "customer": "HH MOCK Current VA Two",
+        "va_identity": "customer name",
+        "item": null,
+        "qty": 20,
+        "rate": 1.0,
+        "amount": 20.0
+      }
+    ],
+    "customer_count": 2,
+    "receipt_count": 2,
+    "total": 60.0
+  },
+  "alexander_setup": {
+    "label": "Mock B — VA as QBO Service",
+    "revenue_account": "HH MOCK VA Services",
+    "customer": "HH MOCK Alexander Client",
+    "services": [
+      { "name": "HH MOCK VA One", "type": "Service", "rate": 1.0, "income_account": "HH MOCK VA Services" },
+      { "name": "HH MOCK VA Two", "type": "Service", "rate": 1.0, "income_account": "HH MOCK VA Services" }
+    ],
+    "receipt": {
+      "customer": "HH MOCK Alexander Client",
+      "lines": [
+        { "item": "HH MOCK VA One", "va_identity": "Service name on the line", "qty": 40, "rate": 1.0, "amount": 40.0 },
+        { "item": "HH MOCK VA Two", "va_identity": "Service name on the line", "qty": 20, "rate": 1.0, "amount": 20.0 }
+      ],
+      "total": 60.0
+    },
+    "customer_count": 1,
+    "receipt_count": 1,
+    "total": 60.0
+  },
+  "compare": {
+    "totals_match": true,
+    "expected_total": 60.0,
+    "va_name_on_receipt": {
+      "current": "customer name",
+      "alexander": "Service line"
+    },
+    "pass_if": [
+      "both totals are $60.00",
+      "Mock B receipt lists both VA names as Service lines",
+      "Mock A still has two customers (unmerged)",
+      "nothing sent, no ACH"
+    ]
+  }
+}

@@ -17,8 +17,16 @@ Source: email to info@ / josh@ 2026-08-27 12:19pm CT, thread “A Escobedo Email
 - Recurring sales receipt lines are those Services. Hours field = Qty/hours on the VA Service line; rate lives on the Service (or override on the line).
 - **Do not merge live customers from this workflow.** Matt/Alexander only, and only after phantom proves the model. Phantom client first. No new invoices. No ACH from us. No Hubstaff writes.
 
+## Mock A/B (before any live merge)
+
+Run current vs this model on phantoms only: [`docs/mock-ab-current-vs-alexander.md`](mock-ab-current-vs-alexander.md).
+
+- Mock A: two customers named after the VAs (current pattern).
+- Mock B: one customer + two Services + `HH MOCK VA Services` income account.
+- Same sample week (40h + 20h at $1.00). Both must total $60. Do not send. Do not ACH.
+
 ## Open with Matt
 
-- Which Chart of Accounts revenue account for VA Services.
-- Phantom customer + a couple of phantom VA Services to dry-run.
+- Create the Mock A/B records in QBO (checklist in the mock doc). Fill IDs back into `mapping/mock-ab.csv`.
+- Which live Chart of Accounts revenue account VA Services should use after phantom (not the mock income account).
 - Whether existing recurring sales receipts already use items, or still need to be rebuilt onto Services before any merge.

@@ -1,15 +1,25 @@
 {
   "name": "hubstaff-qbo-hours-mvp",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "dry_run_default": true,
   "live_billing": false,
-  "goal": "Update hours on an existing QBO recurring sales receipt from prior-week Hubstaff time. Do not create invoices. Do not write pay rates.",
+  "goal": "Populate hours and client bill rate on existing QBO recurring sales receipts using one Service item per VA. Do not create invoices. Do not write Hubstaff/VA pay rates. Do not merge live customers from this workflow.",
+  "qbo_model": {
+    "source": "Alexander Escobedo (Intuit) email 2026-08-27 12:19pm CT",
+    "doc": "docs/from-alexander-qbo.md",
+    "va": "QBO Product/Service, type Service (not a customer-per-VA)",
+    "standard_rate": "Optional client bill rate on the Service item. Not Hubstaff pay / HH PH / net pay.",
+    "revenue_account": "Each VA Service needs a Chart of Accounts revenue account (Matt/Alexander).",
+    "sales_receipt": "VA Service lines populate the sales receipt individually or as a list per customer. VA name, rate, and hours on the line.",
+    "customer": "One QBO customer per real client. Individual customers are not used to track VA work.",
+    "customer_merge": "Human-only, later, if the model works. Preserves previous sales receipts on the merged customer. Never from this workflow. Phantom first."
+  },
   "inputs": {
     "week_start": { "type": "date", "description": "Prior week start" },
     "week_end": { "type": "date", "description": "Prior week end, inclusive" },
     "mapping_file": {
       "type": "csv",
-      "description": "Rows with status=confirmed. Use mapping/from-tracker.csv (VA-level) joined to Hubstaff project IDs; mapping/BLANK.csv is project-level."
+      "description": "Rows with status=confirmed. Use mapping/from-tracker.csv (VA-level) joined to Hubstaff project IDs; mapping/BLANK.csv is project-level. VA maps to qbo_item_id (Service)."
     },
     "tracker": {
       "type": "google_sheet",
@@ -26,9 +36,11 @@
     "status != confirmed",
     "qbo_target=live before phantom_validated",
     "pay_rate present on a QBO write",
+    "HH PH or net pay present on a QBO write",
     "Hubstaff endpoint returns empty hours",
     "create_invoice true",
-    "write to live Hubstaff clients/projects/members/rates/hours"
+    "write to live Hubstaff clients/projects/members/rates/hours",
+    "merge live QBO customers"
   ],
   "steps": [
     {
@@ -62,35 +74,41 @@
     },
     {
       "id": 3,
-      "name": "Translate to QBO customer / sales receipt structure",
+      "name": "Translate to QBO customer + VA Service line",
       "match_on": [
         "qbo_customer_id",
         "qbo_customer_legal_name",
         "qbo_customer_dba",
         "legal_business_name",
         "client_name",
+        "qbo_item_id",
+        "qbo_service_name",
         "qbo_va_number",
         "va_number"
       ],
       "do_not_fuzzy_match_names": true,
-      "dba_vs_legal": "Tracker Client Name is DBA; Legal Business Name is legal. QBO customer is expected to be legal; Hubstaff project names are often DBA/location."
+      "dba_vs_legal": "Tracker Client Name is DBA; Legal Business Name is legal. QBO customer is the real client (legal). Hubstaff project names are often DBA/location. The VA is a Service item on that customer, not its own customer.",
+      "never": ["create a QBO customer per VA", "merge live QBO customers"]
     },
     {
       "id": 4,
-      "name": "Update hours field on phantom QBO recurring sales receipt",
+      "name": "Update VA Service lines on phantom QBO recurring sales receipt",
       "qbo": {
         "object": "RecurringTransaction / Sales Receipt (template or next instance)",
-        "write": "Qty/hours on existing line",
+        "write": "Qty/hours and optional client bill rate on the VA Service line",
         "create_invoice": false,
         "send": false,
         "ach": false,
         "cadence": "Update before Monday confirm; ACH auto-sends Tuesday",
-        "hours_field": "UNKNOWN — ask Matt which field he edits",
+        "hours_field": "Qty/hours on the sales-receipt line for that VA Service",
+        "item": "qbo_item_id (Product/Service, type Service)",
+        "rate": "Standard client bill rate on the Service, or line override. Not Hubstaff pay.",
         "target": "phantom only until phantom_validated"
       },
       "never": [
         "create invoices",
-        "write pay_rate / VA Hourly Rate to Client / VA Hourly Rate to HH PH / VAs Hourly Net Pay to QBO"
+        "write pay_rate / VA Hourly Rate to HH PH / VAs Hourly Net Pay to QBO",
+        "merge live customers"
       ]
     },
     {
@@ -120,7 +138,8 @@
         "create invoices",
         "write pay_rate to QBO",
         "qbo_target=live",
-        "edit the Google Sheet"
+        "edit the Google Sheet",
+        "merge live customers"
       ]
     }
   ],
@@ -130,25 +149,28 @@
     "tracker_legal": "Gracious Living Assistance Inc",
     "hubstaff_project_id": "3889080",
     "hubstaff_project_name": "Assisting Hands Chicago North",
-    "blocked_until": "phantom_validated"
+    "blocked_until": "phantom_validated",
+    "customer_merge": "Only Matt/Alexander, and only after phantom proves the Service model"
   },
   "out_of_scope": [
     "Wise payroll",
     "native Hubstaff QBO payroll sync",
     "500-client rollout",
-    "any live Hubstaff client/project/member/rate/hours writes"
+    "any live Hubstaff client/project/member/rate/hours writes",
+    "automated QBO customer merge"
   ],
   "qbo_cadence": {
-    "source": "Matt Miller email 2026-08-24",
+    "source": "Matt Miller email 2026-08-24; Alexander Escobedo 2026-08-27",
     "quote": "There is nothing to submit, we are only updating information that I will confirm on Monday and will auto-sent on Tuesday.",
     "confirm_day": "Monday",
     "auto_send_ach_day": "Tuesday",
     "object": "QBO recurring transaction / sales receipt",
     "create_invoice": false,
-    "hours_field_name": null,
-    "hours_field_note": "Matt updates 'information' on the recurring transaction. Exact QBO field (Qty vs custom vs line) is still an open question for Matt. Do not invent it.",
+    "hours_field_name": "Qty on the sales-receipt line for the VA Service item",
+    "hours_field_note": "Alexander: rate and hours live on the VA Service line of the sales receipt. VA name is the Service name. Do not invent a custom field.",
     "hours_source_of_truth": "Celdy tracker Client List expected/actual/weekly hours (HH0xx), not a mystery Excel and not raw Hubstaff alone.",
     "phantom_only": true,
-    "never_write_pay_rate": true
+    "never_write_pay_rate": true,
+    "never_merge_customers": true
   }
 }

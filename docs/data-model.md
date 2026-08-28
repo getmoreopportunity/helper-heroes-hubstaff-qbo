@@ -1,6 +1,6 @@
 # Data model — uniformity and determinism
 
-Updated 2026-08-27 9:30pm CT.
+Updated 2026-08-27 9:45pm CT.
 
 There is no separate database. This repo’s mapping is the join. Every surface must speak the same grain, the same keys, and the same fail-closed rules. Names are labels. IDs route. If a row cannot be keyed, it does not write.
 
@@ -122,11 +122,11 @@ Matt Excel, when linked, is a fourth copy of hours. It must equal B. It does not
 - `qbo_target=live` before phantom validated
 - Ambiguous project (generic “Executive Home Care”, “Assisting Hands IL”)
 
-Unmatched tracker rows stay in `mapping/from-tracker-unmatched.csv` with a note. No invented Hubstaff IDs.
+Unmatched tracker rows stay in `mapping/from-tracker-unmatched.csv` with a note. No invented Hubstaff IDs. Tracker names that do not uniquely equal a Hubstaff user name after VA# strip stay in `mapping/from-tracker-unmatched-users.csv`.
 
 ## Draft vs confirmed
 
-`draft` may have blank QBO IDs and blank `hubstaff_user_id`.  
+`draft` may have blank QBO IDs and blank `hubstaff_user_id`.
 `confirmed` requires: `hubstaff_org_id`, `hubstaff_project_id`, `hubstaff_user_id`, `qbo_customer_id`, `qbo_item_id`, `qbo_recurring_sales_receipt_id`, `qbo_hours_field=Qty`, `week_start` known.
 
 Matt is the only one who moves a row to `confirmed`.
@@ -134,7 +134,7 @@ Matt is the only one who moves a row to `confirmed`.
 ## Open (blocks determinism until filled)
 
 - Matt Excel column map (file still not in the repo)
-- `hubstaff_user_id` per VA (read-only Hubstaff, when Codex/Grok can list members)
+- `hubstaff_user_id` fill is exact-name-after-VA#-strip against Hubstaff members (read-only). Remaining unmatched stay unmatched. No fuzzy, no email, no last-name-only.
 - QBO IDs (phantom Mock B first)
 - Rounding rule if hours are not integers
 - Which live Chart of Accounts revenue account VA Services use
@@ -143,6 +143,9 @@ Matt is the only one who moves a row to `confirmed`.
 
 - `mapping/schema.json` — row shape
 - `mapping/from-tracker.csv` — VA-level join (draft)
+- `mapping/hubstaff-users.csv` — Hubstaff user id + name + membership_status (no email/rates)
 - `mapping/BLANK.csv` — project-level Hubstaff IDs
 - `mapping/from-tracker-unmatched.csv` — leftovers, no invented IDs
+- `mapping/from-tracker-unmatched-users.csv` — tracker VA names that did not uniquely match a Hubstaff user
+- `scripts/validate_mapping.py` — fail-closed structural check (`docs/validate-mapping.md`)
 - `workflow/hubstaff-qbo-hours-mvp.json` — runtime steps

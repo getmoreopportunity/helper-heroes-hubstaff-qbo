@@ -5,8 +5,23 @@
   "required": ["status", "hubstaff_project_id", "hubstaff_user_id", "qbo_customer_id", "qbo_recurring_sales_receipt_id", "qbo_hours_field"],
   "properties": {
     "status": { "enum": ["draft", "confirmed", "blocked"] },
+    "routing_key": {
+      "type": ["string", "null"],
+      "description": "hh:{org_id}:{project_id}:{user_id}:{week_start}. Logs and dry-run only. Never a display name."
+    },
+    "week_start": {
+      "type": ["string", "null"],
+      "description": "Monday of the billing week, YYYY-MM-DD. Pairs with weekly_hours_col."
+    },
+    "hours_source": {
+      "enum": ["tracker_weekly", "hubstaff", "matt_excel", "blocked", null],
+      "description": "Where proposed Qty came from. Confirmed writes must be tracker_weekly (or blocked). Hubstaff is input; Excel must equal tracker."
+    },
     "hubstaff_org_id": { "type": ["string", "null"] },
-    "hubstaff_client_id": { "type": ["string", "null"] },
+    "hubstaff_client_id": {
+      "type": ["string", "null"],
+      "description": "Hubstaff client IDs are people, not agencies. Do not use as the QBO customer key."
+    },
     "hubstaff_client_name": { "type": ["string", "null"] },
     "hubstaff_project_id": { "type": "string" },
     "hubstaff_project_name": { "type": ["string", "null"] },
@@ -24,11 +39,11 @@
     "qbo_customer_dba": { "type": ["string", "null"] },
     "qbo_item_id": {
       "type": ["string", "null"],
-      "description": "QBO Product/Service (type Service) for this VA. Alexander: each VA is a Service item; those items populate sales receipts."
+      "description": "QBO Product/Service (type Service) for this VA. Canonical VA key on the QBO side."
     },
     "qbo_service_name": {
       "type": ["string", "null"],
-      "description": "Display name of the VA Service. Appears on the sales receipt."
+      "description": "Display name of the VA Service. Same string as tracker va_name so it prints on the sales receipt."
     },
     "qbo_revenue_account_id": {
       "type": ["string", "null"],
@@ -45,24 +60,24 @@
     },
     "qbo_hours_field": {
       "type": "string",
-      "description": "Qty/hours on the sales-receipt line for the VA Service (Alexander 2026-08-27). Not a mystery custom field."
+      "description": "Always Qty on the VA Service line (Alexander 2026-08-27). Not a custom field."
     },
     "qbo_va_number": { "type": ["string", "null"] },
     "client_name": {
       "type": ["string", "null"],
-      "description": "Tracker DBA: Client List column Client Name"
+      "description": "Tracker DBA: Client List column Client Name. Display only. Do not route on this."
     },
     "legal_business_name": {
       "type": ["string", "null"],
-      "description": "Tracker Legal Business Name (QBO customer legal name candidate)"
+      "description": "Tracker Legal Business Name. Display / QBO customer label. Route on qbo_customer_id."
     },
     "va_name": {
       "type": ["string", "null"],
-      "description": "Tracker VA Name (from-tracker.csv; one row per VA assignment). Maps to qbo_service_name."
+      "description": "Tracker VA Name. Display and QBO Service name. Route on hubstaff_user_id / qbo_item_id."
     },
     "va_number": {
       "type": ["string", "null"],
-      "description": "Parsed from VA Name (VA# / VA #). Maps toward qbo_va_number once Matt confirms."
+      "description": "Parsed from VA Name (VA# / VA #). Not a unique key by itself (numbers reuse per client)."
     },
     "expected_hours": {
       "type": ["number", "string", "null"],
